@@ -13,14 +13,22 @@
         <link href="{{asset('css/admin.css')}}" rel="stylesheet" type="text/css">
 
     </head>
-    <body>
+    <body id="page-top">
         <div id="app">
+            <nav-bar></nav-bar>
+            <div id="wrapper">
+                <side-bar></side-bar>
+                <div id="content-wrapper">
+                    <router-view></router-view>
+                </div>
+            </div>
             <p>
             <router-link to="/input">Go to Foo</router-link>
             <router-link to="/view">Go to Bar</router-link>
             </p>
-            <router-view></router-view>
+            
         </div>
         <script type="text/javascript" src="{{asset('js/admin.js')}}"></script>
+        <script type="text/javascript" src="{{asset('js/admin-jq.js')}}"></script>
     </body>
 </html>
