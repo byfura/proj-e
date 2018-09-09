@@ -18,15 +18,10 @@
             <nav-bar></nav-bar>
             <div id="wrapper">
                 <side-bar></side-bar>
-                <div id="content-wrapper">
+                <div id="content-wrapper" class="container">
                     <router-view></router-view>
                 </div>
             </div>
-            <p>
-            <router-link to="/input">Go to Foo</router-link>
-            <router-link to="/view">Go to Bar</router-link>
-            </p>
-            
         </div>
         <script type="text/javascript" src="{{asset('js/admin.js')}}"></script>
         <script type="text/javascript" src="{{asset('js/admin-jq.js')}}"></script>
