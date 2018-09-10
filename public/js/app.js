@@ -47258,7 +47258,8 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 
 __webpack_require__(39);
 __webpack_require__(43);
-module.exports = __webpack_require__(44);
+__webpack_require__(44);
+module.exports = __webpack_require__(45);
 
 
 /***/ }),
@@ -47418,6 +47419,12 @@ if (false) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 45 */
+/***/ (function(module, exports) {
+
+throw new Error("Module build failed: ModuleBuildError: Module build failed: Error: ENOENT: no such file or directory, open '/home/fura/proj-e/resources/sass/user.scss'\n    at runLoaders (/home/fura/proj-e/node_modules/webpack/lib/NormalModule.js:195:19)\n    at /home/fura/proj-e/node_modules/loader-runner/lib/LoaderRunner.js:364:11\n    at /home/fura/proj-e/node_modules/loader-runner/lib/LoaderRunner.js:200:19\n    at /home/fura/proj-e/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:70:14\n    at _combinedTickCallback (internal/process/next_tick.js:131:7)\n    at process._tickCallback (internal/process/next_tick.js:180:9)");
 
 /***/ })
 /******/ ]);
