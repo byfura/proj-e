@@ -9,7 +9,6 @@
         <title>Proj-E</title>
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
         <link href="{{asset('css/admin.css')}}" rel="stylesheet" type="text/css">
 
     </head>

@@ -7,6 +7,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 import ViewPrivilege from './components/admin/ViewPrivilege.vue'
+import ViewLanguage from './components/admin/ViewLanguage.vue'
 import SideBar from './components/admin/SideBar.vue'
 import NavBar from './components/admin/NavBar.vue'
 
@@ -20,7 +21,7 @@ Vue.component('nav-bar', NavBar);
 const routes = [
   { path: '/user', component: ViewPrivilege },
   { path: '/privilege', component: ViewPrivilege },
-  { path: '/language', component: ViewPrivilege },
+  { path: '/language', component: ViewLanguage },
   { path: '/currency', component: ViewPrivilege },
   { path: '/group', component: ViewPrivilege },
   { path: '/contract', component: ViewPrivilege },
