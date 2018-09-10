@@ -11976,14 +11976,19 @@ button.close {
   vertical-align: text-top !important;
 }
 
-.bg-primary {
+.bg-primary,
+.inverted {
   background-color: #78C2AD !important;
 }
 
 a.bg-primary:hover,
+a.inverted:hover,
 a.bg-primary:focus,
+a.inverted:focus,
 button.bg-primary:hover,
-button.bg-primary:focus {
+button.inverted:hover,
+button.bg-primary:focus,
+button.inverted:focus {
   background-color: #55b298 !important;
 }
 
@@ -15322,7 +15327,8 @@ button.bg-dark:focus {
   font-style: italic !important;
 }
 
-.text-white {
+.text-white,
+.inverted {
   color: #fff !important;
 }
 
