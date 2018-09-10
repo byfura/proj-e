@@ -1,0 +1,25 @@
+
+// Fonts
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import "~bootswatch/dist/minty/variables";
+@import '~bootstrap/scss/bootstrap';
+@import "~bootswatch/dist/minty/bootswatch";
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.inverted {
+	@extend .bg-primary;
+	@extend .text-white;
+}

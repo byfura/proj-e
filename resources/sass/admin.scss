@@ -4,8 +4,8 @@
 @import '~@fortawesome/fontawesome-free/scss/fontawesome';
 @import '~@fortawesome/fontawesome-free/scss/brands';
 @import '~@fortawesome/fontawesome-free/scss/solid';
-@import '~@fortawesome/fontawesome-free/scss/regular';
-@import '~@fortawesome/fontawesome-free/scss/v4-shims';
+// @import '~@fortawesome/fontawesome-free/scss/regular';
+// @import '~@fortawesome/fontawesome-free/scss/v4-shims';
 
 // Variables
 @import 'variables';
@@ -17,4 +17,27 @@
 .navbar-laravel {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.sidebar {
+	padding: 1rem 0;
+	.nav-item {
+		.nav-link {
+			padding: 0.35rem 1rem;
+		}
+	}
+}
+
+.pagination-sm {
+	margin: 0;
+}
+
+.table td {
+	padding: 0.4rem 1rem;
+	font-size: 0.9em;
+}
+
+.inverted {
+	@extend .bg-dark;
+	@extend .text-white;
 }

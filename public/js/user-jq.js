@@ -76,7 +76,7 @@ module.exports = __webpack_require__(79);
 /***/ 79:
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed: Error: ENOENT: no such file or directory, open '/home/fura/proj-e/resources/js/user-jq.js'");
+
 
 /***/ })
 

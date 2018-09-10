@@ -1,12 +1,11 @@
 <template>
   <div>
-    <FormPrivilege></FormPrivilege>
-    <ViewPrivilegeGroup></ViewPrivilegeGroup>
+    <FormLanguage></FormLanguage>
     <div class="card mb-3">
       <div class="card-header">
         <div class="float-left h4">
           <i class="fas fa-table"></i>
-          Privilege
+          Language
         </div>
         <nav aria-label="Page navigation example" class="float-right">
           <ul class="pagination pagination-sm justify-content-end">
@@ -31,13 +30,13 @@
           </div>
         </div>
         <div class="float-right mb-2">
-          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#form-privilege"><i class="fa fa-plus"></i> New Privilege</button>
+          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#form-language"><i class="fa fa-plus"></i> New Language</button>
         </div>
         <div class="table-responsive">
           <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
             <thead class="inverted">
               <tr>
-                <th>Privilege</th>
+                <th>Language</th>
                 <th>Action</th>
               </tr>
             </thead>
@@ -45,8 +44,7 @@
               <tr>
                 <td>Item 1</td>
                 <td>
-                  <button class="btn btn-sm btn-success" data-toggle="modal" data-target="#view-privilege-group"><i class="fa fa-users"></i> Display Group</button>
-                  <button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#form-privilege"><i class="fa fa-edit"></i> Edit</button>
+                  <button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#form-language"><i class="fa fa-edit"></i> Edit</button>
                   <button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i>&nbsp;</button>
                 </td>
               </tr>
@@ -75,14 +73,12 @@
 
 <script>
 
-    import FormPrivilege from './FormPrivilege.vue'
-    import ViewPrivilegeGroup from './ViewPrivilegeGroup.vue'
+    import FormLanguage from './FormLanguage.vue'
 
     export default {
-      name: 'ViewPrivilege',
+      name: 'ViewLanguage',
       components: {
-        FormPrivilege,
-        ViewPrivilegeGroup,
+        FormLanguage
       }
     }
 </script>
