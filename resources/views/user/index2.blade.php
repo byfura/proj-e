@@ -102,14 +102,6 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-lg-7 e-col">
-				<div class="row">
-					<figure class="col-lg-6 e-col">
-						<img class="d-block w-100" src="https://via.placeholder.com/1000x300/aadeff?text=View+Product" alt="Trulli">
-					</figure>					
-					<figure class="col-lg-6 e-col">
-						<img class="d-block w-100" src="https://via.placeholder.com/1000x300/aaffde?text=View+Service" alt="Trulli">
-					</figure>
-				</div>
 				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 				  <ol class="carousel-indicators">
 				    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -135,6 +127,14 @@
 				    <span class="carousel-control-next-icon" aria-hidden="true"></span>
 				    <span class="sr-only">Next</span>
 				  </a>
+				</div>
+				<div class="row">
+					<figure class="col-lg-6 e-col">
+						<img class="d-block w-100" src="https://via.placeholder.com/1000x300/aadeff?text=View+Product" alt="Trulli">
+					</figure>					
+					<figure class="col-lg-6 e-col">
+						<img class="d-block w-100" src="https://via.placeholder.com/1000x300/aaffde?text=View+Service" alt="Trulli">
+					</figure>
 				</div>
 			</div>
 			<div class="col-lg-5 e-col e-bg-secondary pt-3 pl-2 pr-2">
@@ -164,7 +164,7 @@
 						<input type="text" class="form-control" id="i-name" name="name" placeholder="Nama Anda">
 					</div>
 					<div class="form-group pt-2">
-						<button type="submit" class="btn btn-success btn-block btn-lg">
+						<button type="submit" class="btn btn-success btn-block btn-lg" data-toggle="modal" data-target="#modal-verifikasi">
 							<strong>@lang('Daftar Sekarang')</strong>
 						</button>
 					</div>
@@ -190,5 +190,31 @@
 	</div>
 </footer>
 	<!-- <header></header> -->
+
+<!-- Modal -->
+<div class="modal fade" id="modal-verifikasi" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header e-bg-primary">
+        <h5 class="modal-title" id="exampleModalLongTitle">Verifikasi Diperlukan</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Kami sudah mengirimkan link verifikasi ke email anda.<br/>
+        Buka link tersebut untuk melanjutkan
+      </div>
+    </div>
+  </div>
+</div>
+
+@endsection
+
+@section('script')
+	
+<script type="text/javascript">
+	
+</script>
 
 @endsection

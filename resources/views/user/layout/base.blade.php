@@ -17,5 +17,6 @@
         @yield('content')
         <script type="text/javascript" src="{{asset('js/user.js')}}"></script>
         <script type="text/javascript" src="{{asset('js/user-jq.js')}}"></script>
+        @yield('script')
     </body>
 </html>

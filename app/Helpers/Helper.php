@@ -15,10 +15,13 @@ class Helper
     	$ter = rand(180, $sec > 245 ? 200 : 255);
     	$color = [
     		[$prim,$sec,$ter],
+    		[$prim,$ter,$sec],
     		[$sec,$ter,$prim],
+    		[$prim,$ter,$sec],
+    		[$ter,$prim,$sec],
     		[$sec,$prim,$ter],
     	];
-    	return $color[rand(0,2)];
+    	return $color[rand(0,5)];
     }
 
 }
