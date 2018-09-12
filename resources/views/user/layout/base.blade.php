@@ -9,14 +9,14 @@
         <title>Proj-E User</title>
 
         <!-- Fonts -->
-        <link href="{{asset('css/user.css')}}" rel="stylesheet" type="text/css">
+        <link href="{{secure_asset('css/user.css')}}" rel="stylesheet" type="text/css">
         @yield('style')
 
     </head>
     <body id="page-top">
         @yield('content')
-        <script type="text/javascript" src="{{asset('js/user.js')}}"></script>
-        <script type="text/javascript" src="{{asset('js/user-jq.js')}}"></script>
+        <script type="text/javascript" src="{{secure_asset('js/user.js')}}"></script>
+        <script type="text/javascript" src="{{secure_asset('js/user-jq.js')}}"></script>
         @yield('script')
     </body>
 </html>
