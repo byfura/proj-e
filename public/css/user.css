@@ -5056,6 +5056,11 @@ readers do not read off random characters that represent icons */
   font-weight: 900;
 }
 
+:root {
+  --primary: #78C2AD;
+  --secondary: #F3969A;
+}
+
 /*!
  * Bootstrap v4.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
