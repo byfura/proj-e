@@ -93,8 +93,8 @@
   		</div>
   		<div class="form-inline col">
   			<label>List</label>
-  			<button class="ml-1 btn btn-outline-primary active"><i class="fa fa-th"></i></button>
-  			<button class="ml-1 btn btn-outline-primary" onclick="window.location.href = './product2';"><i class="fa fa-th-list"></i></button>
+  			<button class="ml-1 btn btn-outline-primary" onclick="window.location.href = './product';"><i class="fa fa-th"></i></button>
+  			<button class="ml-1 btn btn-outline-primary active"><i class="fa fa-th-list"></i></button>
   		</div>
   	</div>
   </header>
@@ -103,7 +103,26 @@
   	<div class="container-fluid">
 	  	<div class="row">
 	  		@for ($i = 1; $i <= 12; $i++)
-		  		<div class="col-md-2 e-col mb-2">
+	  		<div class="col-md-6 mb-2">
+			    <div class="card">
+			      <div class="row ">
+			        <div class="col-md-4">
+		            <img class="card-img-top" src="https://via.placeholder.com/500x500/aadeff?text=Product {{$i}}" alt="Card image cap">
+		          </div>
+		          <div class="col-md-8 e-col py-2">
+		            <div class="card-block">
+		              <h5 class="card-title">Product {{$i}}</h5>
+							  	<h5 class="card-title"><small>Supplier {{$i}}</small></h5>
+							    <h3 class="card-title"><small>Rp.</small> {{number_format($i * rand(100,1000) * 1000)}}</h3>
+							    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							    tempor incididunt ut labore et dolore magna aliqua.</p>
+		            </div>
+		          </div>
+
+		        </div>
+		      </div>
+		    </div>
+		  		<!-- <div class="col-md-2 e-col mb-2">
 		      	<div class="card">
 						  <img class="card-img-top" src="https://via.placeholder.com/500x500/aadeff?text=Product {{$i}}" alt="Card image cap">
 						  <div class="card-body">
@@ -114,7 +133,7 @@
 						    tempor incididunt ut labore et dolore magna aliqua.</p>
 						  </div>
 						</div>
-					</div>
+					</div> -->
 	      @endfor
 	  	</div>
   	</div>
