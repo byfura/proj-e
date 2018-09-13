@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('user/index2');
 });
 
+Route::get('/product', function () {
+    return view('user/product');
+});
+
 Route::get('/admin', function () {
     return view('admin/index');
 });
