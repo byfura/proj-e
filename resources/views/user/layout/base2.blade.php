@@ -12,8 +12,8 @@
         <link href="{{secure_asset('css/user.css')}}" rel="stylesheet" type="text/css">
         <style type="text/css">
             .e-col {
-                padding-right: 0px;
-                padding-left: 5px;
+                padding-right: 2.5px;
+                padding-left: 2.5px;
                 margin-bottom: 0px;
             }
             .e-col label {
@@ -26,6 +26,17 @@
             <?php $color = Helper::pastelMaker() ?>
             .e-bg-secondary {
                 background-color: rgb({!! $color[0] !!},{!! $color[1] !!},{!! $color[2] !!})
+            }            
+            footer {
+                padding-top: 25px;
+                overflow: hidden;
+            }
+            footer ul>li {
+                display: inline-block;  
+            }
+            footer ul>li + li:before{
+            content: " | ";
+            padding: 0 10px;
             }
         </style>
         @yield('style')
