@@ -26,6 +26,9 @@
             <?php $color = Helper::pastelMaker() ?>
             .e-bg-secondary {
                 background-color: rgb({!! $color[0] !!},{!! $color[1] !!},{!! $color[2] !!})
+            }
+            .e-stars .checked {
+                color: gold;
             }            
             footer {
                 padding-top: 25px;

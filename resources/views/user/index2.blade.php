@@ -75,6 +75,18 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-lg-7 e-col">
+				<div class="row">
+					<figure class="col-lg-6 e-col">
+						<a href="./product">
+							<img class="d-block w-100" src="https://via.placeholder.com/1000x300/aadeff?text=View+Product" alt="Trulli">
+						</a>
+					</figure>					
+					<figure class="col-lg-6 e-col">
+						<a href="./service">
+							<img class="d-block w-100" src="https://via.placeholder.com/1000x300/aaffde?text=View+Service" alt="Trulli">
+						</a>
+					</figure>
+				</div>
 				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 				  <ol class="carousel-indicators">
 				    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -138,23 +150,9 @@
 		</div>
 	</div>
 </main>
-<footer class="e-bg-primary">
-	<div class="row">
-		<div class="col-md-8">
-			<ul>
-				<li><a href="" class="text-secondary">Terms & Conditions</a></li>
-				<li><a href="" class="text-secondary">Contact Us</a></li>
-				<li><a href="" class="text-secondary">About Us</a></li>
-			</ul>
-		</div>
-		<div class="col-md-4">
-			<div class="float-right mr-4">
-				Copyright &copy;2018 E-Commerce Project
-			</div>
-		</div>
-	</div>
-</footer>
-@endsection
+
+@component('user.components.footer')
+@endcomponent
 
 <!-- Modal -->
 <div class="modal fade" id="modal-verifikasi" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
