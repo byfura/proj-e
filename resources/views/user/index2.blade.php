@@ -12,22 +12,6 @@
 		margin-left: 2rem;
 		margin-top: 1.2rem;
 	}
-	.e-col {
-		padding-right: 0px;
-		padding-left: 5px;
-		margin-bottom: 0px;
-	}
-	.e-col label {
-		margin-bottom: 0px;
-	}
-	<?php $color = Helper::pastelMaker() ?>
-	.e-bg-primary {
-		background-color: rgb({!! $color[0] !!},{!! $color[1] !!},{!! $color[2] !!})
-	}
-	<?php $color = Helper::pastelMaker() ?>
-	.e-bg-secondary {
-		background-color: rgb({!! $color[0] !!},{!! $color[1] !!},{!! $color[2] !!})
-	}
 	main .e-col {
 		padding-right: 0px;
 		padding-left: 0px;
@@ -45,17 +29,6 @@
 	}
 	h1 small {
 		font-size: medium;
-	}
-	footer {
-		padding-top: 25px;
-		overflow: hidden;
-	}
-	footer ul>li {
-		display: inline-block;	
-	}
-	footer ul>li + li:before{
-    content: " | ";
-    padding: 0 10px;
 	}
 </style>
 @endsection
@@ -128,14 +101,6 @@
 				    <span class="sr-only">Next</span>
 				  </a>
 				</div>
-				<div class="row">
-					<figure class="col-lg-6 e-col">
-						<img class="d-block w-100" src="https://via.placeholder.com/1000x300/aadeff?text=View+Product" alt="Trulli">
-					</figure>					
-					<figure class="col-lg-6 e-col">
-						<img class="d-block w-100" src="https://via.placeholder.com/1000x300/aaffde?text=View+Service" alt="Trulli">
-					</figure>
-				</div>
 			</div>
 			<div class="col-lg-5 e-col e-bg-secondary pt-3 pl-2 pr-2">
 				<h1 class="text-center">
@@ -189,7 +154,7 @@
 		</div>
 	</div>
 </footer>
-	<!-- <header></header> -->
+@endsection
 
 <!-- Modal -->
 <div class="modal fade" id="modal-verifikasi" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">

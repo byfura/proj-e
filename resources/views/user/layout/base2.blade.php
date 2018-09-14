@@ -9,14 +9,31 @@
         <title>Proj-E User</title>
 
         <!-- Fonts -->
-        <link href="{{asset('css/user.css')}}" rel="stylesheet" type="text/css">
-
+        <link href="{{secure_asset('css/user.css')}}" rel="stylesheet" type="text/css">
+        <style type="text/css">
+            .e-col {
+                padding-right: 0px;
+                padding-left: 5px;
+                margin-bottom: 0px;
+            }
+            .e-col label {
+                margin-bottom: 0px;
+            }
+            <?php $color = Helper::pastelMaker() ?>
+            .e-bg-primary {
+                background-color: rgb({!! $color[0] !!},{!! $color[1] !!},{!! $color[2] !!})
+            }
+            <?php $color = Helper::pastelMaker() ?>
+            .e-bg-secondary {
+                background-color: rgb({!! $color[0] !!},{!! $color[1] !!},{!! $color[2] !!})
+            }
+        </style>
+        @yield('style')
     </head>
     <body id="page-top">
-        <div id="app">
-            @yield('content')
-        </div>
-        <script type="text/javascript" src="{{asset('js/user.js')}}"></script>
-        <script type="text/javascript" src="{{asset('js/user-jq.js')}}"></script>
+        @yield('content')
+        <script type="text/javascript" src="{{secure_asset('js/user.js')}}"></script>
+        <script type="text/javascript" src="{{secure_asset('js/user-jq.js')}}"></script>
+        @yield('script')
     </body>
 </html>
