@@ -8,6 +8,9 @@ import VueRouter from 'vue-router'
 
 import ViewPrivilege from './components/admin/ViewPrivilege.vue'
 import ViewLanguage from './components/admin/ViewLanguage.vue'
+import ViewCurrency from './components/admin/ViewCurrency.vue'
+import ViewGroup from './components/admin/ViewGroup.vue'
+import ViewUser from './components/admin/ViewUser.vue'
 import SideBar from './components/admin/SideBar.vue'
 import NavBar from './components/admin/NavBar.vue'
 
@@ -19,11 +22,11 @@ Vue.component('side-bar', SideBar);
 Vue.component('nav-bar', NavBar);
 
 const routes = [
-  { path: '/user', component: ViewPrivilege },
+  { path: '/user', component: ViewUser },
   { path: '/privilege', component: ViewPrivilege },
   { path: '/language', component: ViewLanguage },
-  { path: '/currency', component: ViewPrivilege },
-  { path: '/group', component: ViewPrivilege },
+  { path: '/currency', component: ViewCurrency },
+  { path: '/group', component: ViewGroup },
   { path: '/contract', component: ViewPrivilege },
   { path: '/contract-group', component: ViewPrivilege },
   { path: '/product-supplier', component: ViewPrivilege },

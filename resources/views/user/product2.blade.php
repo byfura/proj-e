@@ -32,45 +32,8 @@
 
 @section('content')
 
-	<nav class="navbar navbar-expand-lg navbar-dark e-bg-primary">
-    <a class="navbar-brand" href="#">Project-E</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="input-group">
-      <input type="text" class="form-control" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
-      <div class="input-group-append">
-        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		      <span>Semua</span>
-		    <div class="dropdown-menu e-bg-primary">
-		      <a class="dropdown-item" href="#">Semua</a>
-		      <div role="separator" class="dropdown-divider"></div>
-		      <a class="dropdown-item" href="#">Product</a>
-		      <a class="dropdown-item" href="#">Supplier</a>
-		    </div>
-		    </button>
-        <button class="btn btn-success" type="button">
-          <i class="fas fa-search"></i>
-        </button>
-      </div>
-    </div>
-
-    <div class="collapse navbar-collapse" id="navbarColor01">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item ml-1">
-          <button class="btn btn-secondary">
-            <i class="fa fa-shopping-cart"></i> Cart
-          </button>
-        </li>
-        <li class="nav-item ml-1">
-          <button class="btn btn-secondary" data-toggle="modal" data-target="#form-login">
-            <i class="fa fa-user"></i> Masuk
-          </button>
-        </li>
-      </ul>
-    </div>
-  </nav>
+@component('user.components.navbar')
+@endcomponent
 
   <header class="e-bg-secondary">
   	<div class="row">
@@ -111,8 +74,10 @@
 		          </div>
 		          <div class="col-md-8 e-col py-2">
 		            <div class="card-block">
-		              <h5 class="card-title">Product {{$i}}</h5>
-							  	<h5 class="card-title"><small>Supplier {{$i}}</small></h5>
+		              <h5 class="card-title">
+							  		<a href="./product/{{$i}}">Product {{$i}}</a>
+							  	</h5>
+							  	<h5 class="card-title"><small><a href="./supplier/{{$i}}">Supplier {{$i}}</a></small></h5>
 							    <h3 class="card-title"><small>Rp.</small> {{number_format($i * rand(100,1000) * 1000)}}</h3>
 							    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							    tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -170,47 +135,5 @@
 			</div>
 		</div>
 	</footer>
-
-  <!-- modal -->
-
-  <div class="modal fade" id="form-login" tabindex="-1" role="dialog" aria-hidden="true">
-    <form class="form-signin">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header e-bg-primary">
-          <h5 class="modal-title e-bg-primary" id="exampleModalLabel">Sign In Now</h5>
-          <button type="button" class="close e-bg-primary" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <form class="form-signin">
-				    <div class="form-group">
-					    <label for="inputEmail">Email address</label>
-					    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-				  	</div>
-				  	<div class="form-group">
-					    <label for="inputPassword">Password</label>
-					    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-					  </div>
-				    <div class="checkbox mb-3">
-				      <label>
-				        <input type="checkbox" value="remember-me"> Remember me
-				      </label>
-				    </div>
-				    <hr class="mt-4 mb-3">
-				    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-				    <button class="btn btn-lg btn-info btn-block" type="submit">Register</button>
-				    <!-- <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p> -->
-				  </form>
-        </div>
-        <!-- <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div> -->
-      </div>
-    </div>
-    </form>
-  </div>
 
 @endsection

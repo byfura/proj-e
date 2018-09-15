@@ -150,22 +150,9 @@
 		</div>
 	</div>
 </main>
-<footer class="e-bg-primary">
-	<div class="row">
-		<div class="col-md-8">
-			<ul>
-				<li><a href="" class="text-secondary">Terms & Conditions</a></li>
-				<li><a href="" class="text-secondary">Contact Us</a></li>
-				<li><a href="" class="text-secondary">About Us</a></li>
-			</ul>
-		</div>
-		<div class="col-md-4">
-			<div class="float-right mr-4">
-				Copyright &copy;2018 E-Commerce Project
-			</div>
-		</div>
-	</div>
-</footer>
+
+@component('user.components.footer')
+@endcomponent
 
 <!-- Modal -->
 <div class="modal fade" id="modal-verifikasi" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">

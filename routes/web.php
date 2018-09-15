@@ -19,6 +19,20 @@ Route::get('/product', function () {
     return view('user/product');
 });
 
+Route::get('/product/{id}', function ($id) {
+    return view('user/product-detail');
+})
+->where('id', '[0-9]+');
+
+Route::get('/supplier', function () {
+    return view('user/supplier');
+});
+
+Route::get('/supplier/{id}', function ($id) {
+    return view('user/supplier-detail');
+})
+->where('id', '[0-9]+');
+
 Route::get('/product2', function () {
     return view('user/product2');
 });

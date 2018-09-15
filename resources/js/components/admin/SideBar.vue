@@ -7,6 +7,11 @@
       </a>
     </li>
     <li class="nav-item">
+      <router-link class="nav-link" to="/user">
+        <span>User</span>
+      </router-link>
+    </li>
+    <li class="nav-item">
       <router-link class="nav-link" to="/privilege">
         <span>Privilege</span>
       </router-link>
