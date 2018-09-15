@@ -9,6 +9,7 @@
 
 // Variables
 @import 'variables';
+$dark:   #0af;
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
@@ -26,6 +27,7 @@
 			padding: 0.35rem 1rem;
 		}
 	}
+	background-color: #08e;
 }
 
 .pagination-sm {
