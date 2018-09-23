@@ -20,20 +20,20 @@
     <title>Proj-E</title>
 
     <!-- page stylesheets -->
-    <link rel="stylesheet" href="{{asset('vendor/bower-jvectormap/jquery-jvectormap-1.2.2.css')}}"/>
+    <link rel="stylesheet" href="{{secure_asset('vendor/bower-jvectormap/jquery-jvectormap-1.2.2.css')}}"/>
     <!-- end page stylesheets -->
 
     <!-- page stylesheets -->
-    <link rel="stylesheet" href="{{asset('vendor/datatables/media/css/dataTables.bootstrap4.css')}}">
+    <link rel="stylesheet" href="{{secure_asset('vendor/datatables/media/css/dataTables.bootstrap4.css')}}">
     <!-- end page stylesheets -->
 
     <!-- build:css({.tmp,app}) styles/app.min.css -->
-    <link rel="stylesheet" href="{{asset('vendor/bootstrap/dist/css/bootstrap.css')}}"/>
-    <link rel="stylesheet" href="{{asset('vendor/pace/themes/blue/pace-theme-minimal.css')}}"/>
-    <link rel="stylesheet" href="{{asset('vendor/font-awesome/css/font-awesome.css')}}"/>
-    <link rel="stylesheet" href="{{asset('vendor/animate.css/animate.css')}}"/>
-    <link rel="stylesheet" href="{{asset('styles/app.css')}}" id="load_styles_before"/>
-    <link rel="stylesheet" href="{{asset('styles/app.skins.css')}}"/>
+    <link rel="stylesheet" href="{{secure_asset('vendor/bootstrap/dist/css/bootstrap.css')}}"/>
+    <link rel="stylesheet" href="{{secure_asset('vendor/pace/themes/blue/pace-theme-minimal.css')}}"/>
+    <link rel="stylesheet" href="{{secure_asset('vendor/font-awesome/css/font-awesome.css')}}"/>
+    <link rel="stylesheet" href="{{secure_asset('vendor/animate.css/animate.css')}}"/>
+    <link rel="stylesheet" href="{{secure_asset('styles/app.css')}}" id="load_styles_before"/>
+    <link rel="stylesheet" href="{{secure_asset('styles/app.skins.css')}}"/>
     <!-- endbuild -->
   </head>
   <body>
