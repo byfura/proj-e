@@ -17,16 +17,6 @@
 	h5.card-title {
 		margin-bottom: 0.1rem;
 	}
-	.e-search-input {
-	  display:block;
-	  border:none;
-	  padding: 0.25rem;
-	  margin-top: 0.25rem;
-	  width: 100%;
-	  background-color: rgba(255,255,255,0.4);
-	  border-bottom:  1px #ddd solid ;
-	}
-	.e-search-input:focus 		{ outline:none; }
 </style>
 @endsection
 

@@ -12,32 +12,44 @@
 */
 
 Route::get('/', function () {
-    return view('user/index2');
+    return view('user/index-guest');
 });
 
-Route::get('/product', function () {
+Route::get('u', function () {
+    return view('user/index-user');
+});
+
+Route::get('login', function () {
+    return view('user/login');
+});
+
+Route::get('register', function () {
+    return view('user/register');
+});
+
+Route::get('product', function () {
     return view('user/product');
 });
 
-Route::get('/product/{id}', function ($id) {
+Route::get('product/{id}', function ($id) {
     return view('user/product-detail');
 })
 ->where('id', '[0-9]+');
 
-Route::get('/supplier', function () {
+Route::get('supplier', function () {
     return view('user/supplier');
 });
 
-Route::get('/supplier/{id}', function ($id) {
+Route::get('supplier/{id}', function ($id) {
     return view('user/supplier-detail');
 })
 ->where('id', '[0-9]+');
 
-Route::get('/product2', function () {
+Route::get('product2', function () {
     return view('user/product2');
 });
 
-Route::get('/admin', function () {
+Route::get('admin', function () {
     return view('admin/index');
 });
 

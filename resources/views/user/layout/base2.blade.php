@@ -11,14 +11,6 @@
         <!-- Fonts -->
         <link href="{{secure_asset('css/user.css')}}" rel="stylesheet" type="text/css">
         <style type="text/css">
-            .e-col {
-                padding-right: 0px;
-                padding-left: 5px;
-                margin-bottom: 0px;
-            }
-            .e-col label {
-                margin-bottom: 0px;
-            }
             <?php $color = Helper::pastelMaker() ?>
             .e-bg-primary {
                 background-color: rgb({!! $color[0] !!},{!! $color[1] !!},{!! $color[2] !!})

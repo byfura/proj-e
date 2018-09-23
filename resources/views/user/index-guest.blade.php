@@ -2,6 +2,9 @@
 
 @section('style')
 <style>
+	body {
+		overflow-y: scroll;
+	}
 	header,footer {
 		padding: 0.5rem 0;
 		font-weight: bolder;

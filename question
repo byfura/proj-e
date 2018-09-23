@@ -2,3 +2,14 @@
 2a. Privilege mencakup semua sisi/ cuma bagian back (admin/staffnya saja)
 2b. Privilege tidak bisa dinamis, karena kita bikin page yang bisa diakses group tsb manual
 3.
+
+1. Logika konversi guest ke user
+2. Dimana user save data warna pilihan?
+3. Penentuan bahasa dan currency pada guest? default value?
+4. Apa saja isi Set privacy & set security pada Modul User No. 5
+5. Guest: Set privilige? maksudnya login dari guest jadi user/admin/supplier?
+6. Untuk booking sama cart sama?
+7. Sistem update valuta asing/exchange rate berhubung cepatnya pergantian terus menerus
+
+
+1. 
