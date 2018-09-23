@@ -38,11 +38,13 @@
 	    	@if (!isset($user))
 	      <div class="btn-group">
 				  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				    <i class="fa fa-user-times"></i> Guest
+				    <i class="fa fa-user-times"></i> Guest <span class="badge badge-secondary">40</span>
 				  </button>
 				  <div class="dropdown-menu e-bg-primary">
 				    <a class="dropdown-item" href="#"><i class="mr-2 fa fa-comment"></i> Chat</a>
 				    <a class="dropdown-item" href="#"><i class="mr-2 fa fa-phone"></i> Call</a>
+				    <div class="dropdown-divider"></div>
+				  	<a class="dropdown-item" href="#"><span class="mr-1 h5">40</span> Points</a>
 				    <div class="dropdown-divider"></div>
 				    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#form-login"><i class="mr-2 fa fa-user-check"></i>Log In</a>
 				    <a class="dropdown-item" href="{{ url('register') }}"><i class="mr-2 fa fa-file-signature"></i>Register</a>
@@ -51,7 +53,7 @@
 	      @else
 	      <div class="btn-group">
 				  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				    <i class="fa fa-user"></i> {{ $user }}
+				    <i class="fa fa-user"></i> {{ $user }} <span class="badge badge-secondary">40</span>
 				  </button>
 				  <div class="dropdown-menu e-bg-primary">
 				  	<a class="dropdown-item" href="#"><i class="mr-2 fa fa-plus-square"></i> New Status</a>
@@ -61,6 +63,7 @@
 				    <a class="dropdown-item" href="#"><i class="mr-2 fa fa-comment"></i> Chat</a>
 				    <a class="dropdown-item" href="#"><i class="mr-2 fa fa-phone"></i> Call</a>
 				    <div class="dropdown-divider"></div>
+				  	<a class="dropdown-item" href="#"><span class="mr-1 h5">40</span> Points</a>
 				    <a class="dropdown-item" href="#"><i class="mr-2 fa fa-cog"></i> Settings</a>
 				    <div class="dropdown-divider"></div>
 				    <a class="dropdown-item" href="#"><i class="mr-2 fa fa-door-open"></i>Log Out</a>

@@ -22,7 +22,7 @@
 			<div class="col-md-6 text-right">
 				<h5><strong>Rp 1.200.000</strong></h5>
 			</div>
-			<button class="btn btn-block btn-success">Checkout</button>
+			<button class="btn btn-block btn-success" onclick="window.location.href = '{{url('checkout')}}'">Checkout</button>
 		</div>
 	</div>
 </div>

@@ -56,7 +56,7 @@
   	<div class="container-fluid">
 	  	<div class="row">
 	  		@for ($i = 1; $i <= 12; $i++)
-		  		<div class="col-md-2 e-col mb-2">
+		  		<div class="col-xl-2 col-lg-3 e-col mb-2">
 		      	<div class="card">
 						  <img class="card-img-top" src="https://via.placeholder.com/500x500/aadeff?text=Product {{$i}}" alt="Card image cap">
 						  <div class="card-body">

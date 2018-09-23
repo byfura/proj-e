@@ -27,8 +27,24 @@ Route::get('register', function () {
     return view('user/register');
 });
 
+Route::get('register2', function () {
+    return view('user/register-detail');
+});
+
+Route::get('register3', function () {
+    return view('user/register-cc');
+});
+
+Route::get('forgotpassword', function () {
+    return view('user/forgot-password');
+});
+
 Route::get('product', function () {
     return view('user/product');
+});
+
+Route::get('product2', function () {
+    return view('user/product2');
 });
 
 Route::get('product/{id}', function ($id) {
@@ -45,11 +61,19 @@ Route::get('supplier/{id}', function ($id) {
 })
 ->where('id', '[0-9]+');
 
-Route::get('product2', function () {
-    return view('user/product2');
+Route::get('checkout', function () {
+    return view('user/checkout');
 });
 
 Route::get('admin', function () {
     return view('admin/index');
+});
+
+Route::get('admin/table', function () {
+    return view('admin/tabletemplate');
+});
+
+Route::get('admin/user', function () {
+    return view('admin/usertemplate');
 });
 

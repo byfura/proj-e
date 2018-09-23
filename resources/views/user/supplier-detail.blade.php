@@ -83,7 +83,8 @@
 						<h4 class="text-muted">"-- Motto Supplier Y --"</h4>
 					</div>
 					<div class="col e-header-buttons">
-						<button class="btn btn-lg btn-success btn-block mb-2"><i class="fa fa-comment mr-1"></i> Chat Dengan Supplier</button>
+						<button class="btn btn-lg btn-success btn-block mb-2"><i class="fa fa-comment mr-1"></i> Chat Supplier</button>
+						<button class="btn btn-lg btn-success btn-block mb-2"><i class="fa fa-phone mr-1"></i> Telpon Supplier</button>
 						<button class="btn btn-lg btn-info btn-block"><i class="fa fa-inbox mr-1"></i> Kritik & Saran</button>
 					</div>
 				</div>

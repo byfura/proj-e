@@ -25,10 +25,41 @@
 @component('user.components.navbar', ['searchbar' => false, 'user' => 'User-Test'])
 @endcomponent
 
+<header>
+	
+	<div class="container">
+		<div class="d-flex justify-content-center">
+			
+				<a href="{{url('product')}}">
+					<img src="https://via.placeholder.com/300x50/aadeff?text=View+Product" alt="Trulli">
+				</a>
+			
+				<a href="{{url('service')}}">
+					<img src="https://via.placeholder.com/300x50/aaffde?text=View+Service" alt="Trulli">
+				</a>
+			
+		</div>
+	</div>
+
+</header>
+
 <main>
 
-<div class="container" style="padding: 25% 25%">
-	<h1>Konten Status</h1>
+<div class="container h-100">
+	<div class="row">
+		<div class="col-md-3 order-md-2">
+			<div class="list-group">
+			  <button type="button" class="list-group-item list-group-item-action active">
+			    Status
+			  </button>
+			  <button type="button" class="list-group-item list-group-item-action">Riwayat</button>
+			  <button type="button" class="list-group-item list-group-item-action">Chat & Call</button>
+			</div>
+		</div>
+		<div class="col">
+			<h1>Konten Status</h1>
+		</div>
+	</div>
 </div>
 
 </main>
