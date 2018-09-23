@@ -1,0 +1,111 @@
+
+// Fonts
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+:root {
+	--primary: #78C2AD;
+	--secondary: #F3969A;
+}
+@import 'variables';
+
+// Bootstrap
+@import "~bootswatch/dist/minty/variables";
+@import '~bootstrap/scss/bootstrap';
+@import "~bootswatch/dist/minty/bootswatch";
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.inverted {
+	@extend .bg-primary;
+	@extend .text-white;
+}
+
+.e-col {
+    padding-right: 0px;
+    padding-left: 5px;
+    margin-bottom: 0px;
+}
+
+.e-col-zero {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+
+.e-col label {
+    margin-bottom: 0px;
+}
+
+.e-search-input {
+  display:block;
+  border:none;
+  padding: 0.25rem;
+  margin-top: 0.25rem;
+  width: 100%;
+  background-color: rgba(255,255,255,0.4);
+  border-bottom:  1px #ddd solid ;
+}
+
+.e-search-input:focus 		{ outline:none; }
+
+.navbar-expand-lg .navbar-nav .e-cart {
+    position: absolute;
+}
+.navbar-nav .e-cart {
+    position: static;
+    float: none;
+}
+.e-cart.show {
+    display: block;
+}
+
+.e-cart {
+    font-family: "Nunito", sans-serif;    
+}
+
+.e-cart {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    max-width: 50vw;
+    padding: 0.5rem 0;
+    margin: 0.125rem 0 0;
+    font-size: 0.9rem;
+    color: #888;
+    text-align: left;
+    list-style: none;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.4rem;
+    
+}
+
+.e-cart-items {
+  max-height: 450px;
+  overflow-y: auto;
+}
+
+.e-cart-item {
+	  display: block;
+	  width: 100%;
+	  padding: 0.25rem 1.5rem;
+	  clear: both;
+	  font-weight: 400;
+	  color: #212529;
+	  text-align: inherit;
+	  white-space: nowrap;
+	  background-color: transparent;
+	  border: 0;
+	}

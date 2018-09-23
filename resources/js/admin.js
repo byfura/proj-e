@@ -6,8 +6,11 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import FormPrivilege from './components/admin/FormPrivilege.vue'
 import ViewPrivilege from './components/admin/ViewPrivilege.vue'
+import ViewLanguage from './components/admin/ViewLanguage.vue'
+import ViewCurrency from './components/admin/ViewCurrency.vue'
+import ViewGroup from './components/admin/ViewGroup.vue'
+import ViewUser from './components/admin/ViewUser.vue'
 import SideBar from './components/admin/SideBar.vue'
 import NavBar from './components/admin/NavBar.vue'
 
@@ -19,8 +22,19 @@ Vue.component('side-bar', SideBar);
 Vue.component('nav-bar', NavBar);
 
 const routes = [
-  { path: '/input', component: FormPrivilege },
-  { path: '/view', component: ViewPrivilege }
+  { path: '/user', component: ViewUser },
+  { path: '/privilege', component: ViewPrivilege },
+  { path: '/language', component: ViewLanguage },
+  { path: '/currency', component: ViewCurrency },
+  { path: '/group', component: ViewGroup },
+  { path: '/contract', component: ViewPrivilege },
+  { path: '/contract-group', component: ViewPrivilege },
+  { path: '/product-supplier', component: ViewPrivilege },
+  { path: '/product-type', component: ViewPrivilege },
+  { path: '/product-typevar', component: ViewPrivilege },
+  { path: '/product-pricing', component: ViewPrivilege },
+  { path: '/product-pricing-group', component: ViewPrivilege },
+  { path: '/product-promotion-type', component: ViewPrivilege },
 ]
 
 const router = new VueRouter({
