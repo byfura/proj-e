@@ -1,65 +1,93 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+# Halo Team...
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+Disini untuk tahap alpha kami menggunakan github sebagai sarana pemersatu proyek dan beberapa tambahan lainnya.
+* Diharapkan untuk menginstall **"GIT"** terlebih dahulu. 
+* Diharapkan untuk menginstall **"NPM (Node Package Manager)"**
+* Akun **Github** untuk melakukan push repository
 
-## About Laravel
+Link Download Git : https://git-scm.com/downloads
+NPM terbundle bersama Node.js yang dapat di download di : https://nodejs.org/en/download/
+Registrasi Github di : https://github.com/join
+(NB: Saya tidak include Laravel karena saya kira sudah terinstall)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+Sebelum lanjut tolong info saya di grup WA untuk email akun github, supaya bisa tak invite collab repository ini.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+# Clone dan Install Repo
+Langkah ini dilakukan saat pertama kali menggunakan repo ini.
+* Buka command prompt/terminal. (Jika memakai xampp/laragon buka shell/terminalnya lewat control panel aplikasi tersebut)
+* Masuk ke directory htdocs/www (via cd)
+* Clone repo ini
+```sh
+git clone https://github.com/byfura/proj-e
+```
+* Install dependency
+```sh
+cd proj-e
+composer install
+npm install
+```
+* Generate key
+```sh
+cp .env.example .env
+php artisan key:generate
+```
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications.
+# Branch Repo
+Setiap personil diharapkan membuat "branch" tersendiri. Branch dilakukan agar setiap orang bisa fokus terhadap tugas masing-masing tanpa harus menunggu anggota lain.
 
-## Learning Laravel
+Membuat branch:
+```sh
+git branch <<nama>>
+git branch bayu
+```
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of any modern web application framework, making it a breeze to get started learning the framework.
+Pindah ke branch:
+```sh
+git checkout <<nama>>
+git checkout bayu
+```
 
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 1100 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
+Diharapkan agar setiap personil bekerja dalam branch masing-masing.
 
-## Laravel Sponsors
+# Commit Repo
+Sehari sekali/Saat suatu fitur selesai diharapkan untuk mengcommit perubahan
+```sh
+git add .
+git status
+git commit -m "<Pesan/Message singkat tentang apa yang dikerjakan>"
+```
 
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell):
+# Pull Repo
+Sebelum melakukan push ke repository di github, harap melakukan pull agar mengetahui perubahan/tambahan yang dilakukan personil lain
+```sh
+git pull
+```
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
+# Push Repo
+Setelah melakukan pull, saatnya push ke masing2 branch di repository github
+```sh
+git push -u origin <<nama branch>>
+```
 
-## Contributing
+# Merge Branch
+Untuk menggabungkan pekerjaan dengan 'branch' personil lain, kita menggunakan fitur merge
+```sh
+git merge <<nama branch>>
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+# --------------------
+Untuk memahami git lebih mendalam bisa latihan di https://learngitbranching.js.org
 
-## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+# Run Project
+* Buka cmd/shell/terminal
+* Masuk ke directory proj-e (via cd)
+* Run proj-e (Jika menggunakan XAMPP/Laravel, skip saja)
+```sh
+php artisan serve
+```
+* Buka cmd/shell/terminal baru
+* Run npm watch
+```sh
+npm run watch
+```

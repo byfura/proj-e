@@ -18,6 +18,17 @@
             <?php $color = Helper::pastelMaker() ?>
             .e-bg-secondary {
                 background-color: rgb({!! $color[0] !!},{!! $color[1] !!},{!! $color[2] !!})
+            }            
+            footer {
+                padding-top: 25px;
+                overflow: hidden;
+            }
+            footer ul>li {
+                display: inline-block;  
+            }
+            footer ul>li + li:before{
+            content: " | ";
+            padding: 0 10px;
             }
         </style>
         @yield('style')

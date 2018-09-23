@@ -9,7 +9,7 @@
         <title>Proj-E</title>
 
         <!-- Fonts -->
-        <link href="{{asset('css/admin.css')}}" rel="stylesheet" type="text/css">
+        <link href="{{secure_asset('css/admin.css')}}" rel="stylesheet" type="text/css">
 
     </head>
     <body id="page-top">
@@ -22,7 +22,7 @@
                 </div>
             </div>
         </div>
-        <script type="text/javascript" src="{{asset('js/admin.js')}}"></script>
-        <script type="text/javascript" src="{{asset('js/admin-jq.js')}}"></script>
+        <script type="text/javascript" src="{{secure_asset('js/admin.js')}}"></script>
+        <script type="text/javascript" src="{{secure_asset('js/admin-jq.js')}}"></script>
     </body>
 </html>
