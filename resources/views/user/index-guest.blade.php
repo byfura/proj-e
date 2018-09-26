@@ -62,7 +62,7 @@
 							<input type="password" class="form-control form-control-sm" placeholder="Password">
 						</label>
 						<div class="">
-							<a href="#" class="text-secondary">Forget Password</a>
+							<a href="{{url('forgot-password')}}" class="text-secondary">Forget Password</a>
 						</div>
 					</div>
 					<div class="form-group col-md-2 e-col">

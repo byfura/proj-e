@@ -5,7 +5,7 @@
   <div class="content-view">
     <div class="card">
       <div class="card-header no-bg b-a-0">
-        Datatables
+        Input
       </div>
       <div class="card-block">
         <button type="button" class="btn btn-primary btn-icon loading-demo m-r-xs">

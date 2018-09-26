@@ -1,41 +1,7 @@
+@component('admin.head')
+  {{ $slot }}
+@endcomponent
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content=""/>
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1"/>
-    <meta name="msapplication-tap-highlight" content="no">
-    
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="Proj-E">
-
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Proj-E">
-
-    <meta name="theme-color" content="#4C7FF0">
-    
-    <title>Proj-E</title>
-
-    <!-- page stylesheets -->
-    <link rel="stylesheet" href="{{secure_asset('vendor/bower-jvectormap/jquery-jvectormap-1.2.2.css')}}"/>
-    <!-- end page stylesheets -->
-
-    <!-- page stylesheets -->
-    <link rel="stylesheet" href="{{secure_asset('vendor/datatables/media/css/dataTables.bootstrap4.css')}}">
-    <!-- end page stylesheets -->
-
-    <!-- build:css({.tmp,app}) styles/app.min.css -->
-    <link rel="stylesheet" href="{{secure_asset('vendor/bootstrap/dist/css/bootstrap.css')}}"/>
-    <link rel="stylesheet" href="{{secure_asset('vendor/pace/themes/blue/pace-theme-minimal.css')}}"/>
-    <link rel="stylesheet" href="{{secure_asset('vendor/font-awesome/css/font-awesome.css')}}"/>
-    <link rel="stylesheet" href="{{secure_asset('vendor/animate.css/animate.css')}}"/>
-    <link rel="stylesheet" href="{{secure_asset('styles/app.css')}}" id="load_styles_before"/>
-    <link rel="stylesheet" href="{{secure_asset('styles/app.skins.css')}}"/>
-    <!-- endbuild -->
-  </head>
   <body>
 
     <div class="app">
@@ -81,13 +47,41 @@
           <p class="nav-title">ADMIN MENUS</p>
           <ul class="nav">
             <li>
-              <a href="index.php">
+              <a href="{{ url('admin/table') }}">
                 <i class="material-icons text-primary">home</i>
-                <span>Home</span>
+                <span>Dashboard</span>
               </a>
             </li>
+            <li><hr></li>
           </ul>
+          
           <!-- dashboard -->
+          <p class="nav-title">CONTRACT SECTION</p>
+          <ul class="nav">
+            <li id="li-contract">
+              <a href="{{ url('admin/contractvar#li-contract') }}">
+                <span class="menu-caret">
+                  <i class="material-icons">arrow_drop_down</i>
+                </span>
+                <i class="material-icons text-primary">playlist_add_check</i>
+                <span>Contract Variable</span>
+              </a>
+              <ul class="sub-menu">
+                <li>
+                  <a href="{{ url('admin/contractvargroup#li-contract') }}">
+                    <span>Contract Variable Group</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="{{ url('admin/paymenttype') }}">
+                <i class="material-icons text-success">local_atm</i>
+                <span>Payment Type</span>
+              </a>
+            </li>
+            <li><hr></li>
+          </ul>
 
           <p class="nav-title">PRODUCT SECTION</p>
           <ul class="nav">
@@ -199,27 +193,6 @@
             </li>
             <!-- /promotion -->
             <!-- contract -->
-            <li>
-              <a href="javascript:;">
-                <span class="menu-caret">
-                  <i class="material-icons">arrow_drop_down</i>
-                </span>
-                <i class="material-icons text-success">create</i>
-                <span>Contract</span>
-              </a>
-              <ul class="sub-menu">
-                <li>
-                  <a href="{{ url('admin/table') }}">
-                    <span>Contract Variabel</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="{{ url('admin/table') }}">
-                    <span>Contract Variabel Group</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
             <!-- /contract -->
             <!-- promotion -->
             <li>
@@ -410,39 +383,54 @@
             <li><hr/></li>
           </ul>
 
-          <p class="nav-title">SETTING</p>
+          <p class="nav-title"><span class="fa fa-cog"></span> SETTING</p>
           <ul class="nav">
             <!-- privilage -->
-            <li>
-              <a href="{{ url('admin/user')}}">
-                <i class="material-icons">person_add</i>
-                <span>Privilage</span>
+            <ul class="nav">
+            <li id="li-user">
+              <a href="{{ url('admin/user#li-user') }}">
+                <span class="menu-caret">
+                  <i class="material-icons">arrow_drop_down</i>
+                </span>
+                <i class="material-icons text-success">group</i>
+                <span>User</span>
               </a>
+              <ul class="sub-menu">
+                <li>
+                  <a href="{{ url('admin/group#li-user') }}">
+                    <span>Group</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="{{ url('admin/privilege#li-user') }}">
+                    <span>Privilege</span>
+                  </a>
+                </li>
+              </ul>
             </li>
-            <!-- /privilage -->
-            <!-- group privilage -->
             <li>
-              <a href="{{ url('admin/user')}}">
-                <i class="material-icons">group_add</i>
-                <span>Group Privilage</span>
-              </a>
-            </li>
-            <!-- /group privilage -->
-            <!-- language -->
-            <li>
-              <a href="{{ url('admin/table') }}">
-                <i class="material-icons">language</i>
+              <a href="{{ url('admin/language') }}">
+                <i class="material-icons text-primary">translate</i>
                 <span>Language</span>
               </a>
             </li>
-            <!-- /language -->
-            <!-- currency & exchange rate -->
-            <li>
-              <a href="{{ url('admin/table') }}">
-                <i class="material-icons">attach_money</i>
-                <span>Currency & Exchange Rate</span>
+            <li id="li-currency">
+              <a href="{{ url('admin/currency#li-currency') }}">
+                <span class="menu-caret">
+                  <i class="material-icons">arrow_drop_down</i>
+                </span>
+                <i class="material-icons text-warning">attach_money</i>
+                <span>Currency</span>
               </a>
+              <ul class="sub-menu">
+                <li>
+                  <a href="{{ url('admin/exchange#li-currency') }}">
+                    <span>Exchange Rate</span>
+                  </a>
+                </li>
+              </ul>
             </li>
+          </ul>
             <!-- /currency & rxchange rate -->
 
             <li><hr/></li>

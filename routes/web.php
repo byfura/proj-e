@@ -19,6 +19,11 @@ Route::get('u', function () {
     return view('user/index-user');
 });
 
+Route::get('s', function () {
+    return view('user/index-supplier');
+});
+
+
 Route::get('login', function () {
     return view('user/login');
 });
@@ -35,7 +40,7 @@ Route::get('register3', function () {
     return view('user/register-cc');
 });
 
-Route::get('forgotpassword', function () {
+Route::get('forgot-password', function () {
     return view('user/forgot-password');
 });
 
@@ -69,11 +74,19 @@ Route::get('admin', function () {
     return view('admin/index');
 });
 
-Route::get('admin/table', function () {
-    return view('admin/tabletemplate');
+// Route::get('admin/table', function () {
+//     return view('admin/tabletemplate');
+// });
+
+// Route::get('admin/user', function () {
+//     return view('admin/usertemplate');
+// });
+
+Route::get('admin/{page}/i', function ($page) {
+    return view('admin/input/' . $page);
 });
 
-Route::get('admin/user', function () {
-    return view('admin/usertemplate');
+Route::get('admin/{page}', function ($page) {
+    return view('admin/view/' . $page);
 });
 
