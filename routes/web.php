@@ -23,6 +23,14 @@ Route::get('s', function () {
     return view('user/index-supplier');
 });
 
+Route::get('s/{page}/i', function ($page) {
+    return view('user/input/' . $page);
+});
+
+Route::get('s/{page}', function ($page) {
+    return view('user/view/' . $page);
+});
+
 
 Route::get('login', function () {
     return view('user/login');
