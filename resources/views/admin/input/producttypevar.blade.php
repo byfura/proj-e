@@ -6,7 +6,7 @@
 
 	<?php
 		$inputs = [
-			['name' => 'Product Supplier Type', 'type' => 'select'],
+			['name' => 'Product Type', 'type' => 'select'],
 			['name' => 'Var Name', 'type' => 'text'],
 			['name' => 'Var Cat', 'type' => 'int'],
 			['name' => 'Var Type', 'type' => 'int'],

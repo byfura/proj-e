@@ -1,4 +1,4 @@
-@extends('admin.base.input-template')
+@extends('admin.base.view-template')
 	
 @section('title', 'Product Supplier Type Var')
 
@@ -6,7 +6,7 @@
 
 	<?php
 		$inputs = [
-			['name' => 'Product Supplier Type', 'type' => 'select'],
+			['name' => 'Product Type', 'type' => 'select'],
 			['name' => 'Var Name', 'type' => 'text'],
 			['name' => 'Var Cat', 'type' => 'int'],
 			['name' => 'Var Type', 'type' => 'int'],
@@ -16,10 +16,13 @@
 		]
 	?>
 
-	@component('admin.base.input-generate', ['inputs' => $inputs ])
+	@component('admin.base.view-generate', ['inputs' => $inputs ])
 	@endcomponent
 
 @endsection
 
 @section('addscripts')
+	<script type="text/javascript">
+		$('#li-product').addClass('open');
+	</script>
 @endsection

@@ -1,12 +1,13 @@
 @extends('admin.base.input-template')
 	
-@section('title', 'Product Supplier Type')
+@section('title', 'Product Type')
 
 @section('inputs')
 
 	<?php
 		$inputs = [
-			['name' => 'Product Supplier Type', 'type' => 'text'],
+			['name' => 'Product Type', 'type' => 'text'],
+			['name' => 'Product Supplier Type', 'type' => 'select'],
 		]
 	?>
 

@@ -1,0 +1,62 @@
+<Product>
+	<ProductId>1</ProductId>
+	<ProductName>HOODIE JAKET STUSSY SS LINK SPIRAL TIEDYE</ProductName>
+
+	<ProductSupplier>
+		<ProductSupplierId id="1">1</ProductSupplierId>
+		<ProductSupplierName>Golden Store</ProductSupplierName>
+	</ProductSupplier>
+
+	<ProductType>
+		<ProductTypeId>1</ProductTypeId>
+		<ProductType>Hoodie</ProductType>
+		<ProductSupplierType id="1">
+			<ProductSupplierTypeId>1</ProductSupplierTypeId>
+			<ProductSupplierType>Garment</ProductSupplierType>
+		</ProductSupplierType>
+	</ProductType>
+
+	<ProductPricingType>
+		<ProductPricingTypeId id="1">1</ProductPricingTypeId>
+		<ProductPricingType>Bayar Di Tempat</ProductPricingType>
+	</ProductPricingType>
+
+	<PromotionType>
+		<PromotionTypeId id="1">1</PromotionTypeId>
+		<PromotionType>Weekend Murah</PromotionType>
+	</PromotionType>
+
+	<Currency>
+		<CurrencyId id="1">1</CurrencyId>
+		<CurrencyCode>RP</CurrencyCode>
+		<Currency>Rupiah</Currency>
+	</Currency>
+
+	<Validity>1</Validity>
+	<Price>10000</Price>
+	<Discount>10</Discount>
+	<SatuanVolume>Pcs</SatuanVolume>
+	<Stock>10</Stock>
+</Product>
+
+
+<ProductTypeVar>
+	<ProductTypeVarId>1</ProductTypeVarId>
+
+	<ProductType>
+		<ProductTypeId>1</ProductTypeId>
+		<ProductType>Hoodie</ProductType>
+		<ProductSupplierType id="1">
+			<ProductSupplierTypeId>1</ProductSupplierTypeId>
+			<ProductSupplierType>Garment</ProductSupplierType>
+		</ProductSupplierType>
+	</ProductType>
+
+	<VariabelName>??</VariabelName>
+	<VariabelCategory>??</VariabelName>
+	<VariabelType>??</VariabelType>
+	<KeyVariabel>??</KeyVariabel>
+	<Icon>??</Icon>
+	<Optional>??</Optional>
+
+</ProductTypeVar>

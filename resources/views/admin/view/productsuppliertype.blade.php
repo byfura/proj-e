@@ -1,4 +1,4 @@
-@extends('admin.base.input-template')
+@extends('admin.base.view-template')
 	
 @section('title', 'Product Supplier Type')
 
@@ -10,10 +10,14 @@
 		]
 	?>
 
-	@component('admin.base.input-generate', ['inputs' => $inputs ])
+
+	@component('admin.base.view-generate', ['inputs' => $inputs ])
 	@endcomponent
 
 @endsection
 
 @section('addscripts')
+	<script type="text/javascript">
+		$('#li-supplier').addClass('open');
+	</script>
 @endsection

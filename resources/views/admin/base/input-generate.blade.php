@@ -31,5 +31,22 @@
     	</select>
     </div>
   </div>
+  @elseif ($input['type'] == 'int')
+  <div class="form-group row">
+    <label for="{{ preg_replace('/\s+/','',strtolower($input['name'])) }}" class="col-xs-2 col-form-label">{{ ucwords($input['name']) }}</label>
+    <div class="col-xs-10">
+      <input class="form-control" type="number" placeholder="Input {{ucwords($input['name'])}} ..." id="{{preg_replace('/\s+/','',strtolower($input['name']))}}">
+    </div>
+  </div>
+  @elseif ($input['type'] == 'file')
+  <div class="form-group row">
+    <label for="{{ preg_replace('/\s+/','',strtolower($input['name'])) }}" class="col-xs-2 col-form-label">{{ ucwords($input['name']) }}</label>
+    <div class="col-xs-10">
+      <div class="custom-file">
+        <input type="file" class="custom-file-input" id="customFile">
+        <label class="custom-file-label" for="customFile">Choose file</label>
+      </div>
+    </div>
+  </div>
   @endif
 @endforeach
