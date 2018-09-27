@@ -1,4 +1,4 @@
-@component('admin.head')
+@component('/admin.head')
   {{ $slot }}
 @endcomponent
 
@@ -47,7 +47,7 @@
           <p class="nav-title">ADMIN MENUS</p>
           <ul class="nav">
             <li>
-              <a href="{{ url('admin/table') }}">
+              <a href="{{ url('/admin/table') }}">
                 <i class="material-icons text-primary">home</i>
                 <span>Dashboard</span>
               </a>
@@ -59,7 +59,7 @@
           <p class="nav-title">CONTRACT SECTION</p>
           <ul class="nav">
             <li id="li-contract">
-              <a href="{{ url('admin/contractvar#li-contract') }}">
+              <a href="{{ url('/admin/contractvar#li-contract') }}">
                 <span class="menu-caret">
                   <i class="material-icons">arrow_drop_down</i>
                 </span>
@@ -68,14 +68,14 @@
               </a>
               <ul class="sub-menu">
                 <li>
-                  <a href="{{ url('admin/contractvargroup#li-contract') }}">
+                  <a href="{{ url('/admin/contractvargroup#li-contract') }}">
                     <span>Contract Variable Group</span>
                   </a>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="{{ url('admin/paymenttype') }}">
+              <a href="{{ url('/admin/paymenttype') }}">
                 <i class="material-icons text-success">local_atm</i>
                 <span>Payment Type</span>
               </a>
@@ -96,22 +96,22 @@
               </a>
               <ul class="sub-menu">
                 <li>
-                  <a href="{{ url('admin/producttype#li-product') }}">
+                  <a href="{{ url('/admin/producttype#li-product') }}">
                     <span>Product Type</span>
                   </a>
                 </li>
                 <li>
-                  <a href="{{ url('admin/producttypevar#li-product') }}">
+                  <a href="{{ url('/admin/producttypevar#li-product') }}">
                     <span>Product Type Variabel</span>
                   </a>
                 </li>
                 <li>
-                  <a href="{{ url('admin/productvargroup#li-product') }}">
+                  <a href="{{ url('/admin/productvargroup#li-product') }}">
                     <span>Product Variabel Group</span>
                   </a>
                 </li>
                 <li>
-                  <a href="{{ url('admin/productvargroupval#li-product') }}">
+                  <a href="{{ url('/admin/productvargroupval#li-product') }}">
                     <span>Product Variabel Group Val</span>
                   </a>
                 </li>
@@ -129,22 +129,22 @@
               </a>
               <ul class="sub-menu">
                 <li>
-                  <a href="{{ url('admin/productsuppliertype#li-supplier') }}">
+                  <a href="{{ url('/admin/productsuppliertype#li-supplier') }}">
                     <span>Supplier Type</span>
                   </a>
                 </li>
                 <li>
-                  <a href="{{ url('admin/productsuppliertypevar#li-supplier') }}">
+                  <a href="{{ url('/admin/productsuppliertypevar#li-supplier') }}">
                     <span>Supplier Type Variabel</span>
                   </a>
                 </li>
                 <li>
-                  <a href="{{ url('admin/productsuppliervargroup#li-supplier') }}">
+                  <a href="{{ url('/admin/productsuppliervargroup#li-supplier') }}">
                     <span>Supplier Variabel Group</span>
                   </a>
                 </li>
                 <li>
-                  <a href="{{ url('admin/productsuppliervargroupval#li-supplier') }}">
+                  <a href="{{ url('/admin/productsuppliervargroupval#li-supplier') }}">
                     <span>Supplier Variabel Group Val</span>
                   </a>
                 </li>
@@ -162,22 +162,22 @@
               </a>
               <ul class="sub-menu">
                 <li>
-                  <a href="{{ url('admin/productpricingtype#li-pricing') }}">
+                  <a href="{{ url('/admin/productpricingtype#li-pricing') }}">
                     <span>Pricing Type</span>
                   </a>
                 </li>
                 <li>
-                  <a href="{{ url('admin/productpricingtypevar#li-pricing') }}">
+                  <a href="{{ url('/admin/productpricingtypevar#li-pricing') }}">
                     <span>Pricing Type Variabel</span>
                   </a>
                 </li>
                 <li>
-                  <a href="{{ url('admin/productpricingvargroup#li-pricing') }}">
+                  <a href="{{ url('/admin/productpricingvargroup#li-pricing') }}">
                     <span>Pricing Variabel Group</span>
                   </a>
                 </li>
                 <li>
-                  <a href="{{ url('admin/productpricingvargroupval#li-pricing') }}">
+                  <a href="{{ url('/admin/productpricingvargroupval#li-pricing') }}">
                     <span>Pricing Variabel Group Val</span>
                   </a>
                 </li>
@@ -186,7 +186,7 @@
             <!-- /pricing -->
             <!-- promotion -->
             <li>
-              <a href="{{ url('admin/productpromotiontype') }}">
+              <a href="{{ url('/admin/productpromotiontype') }}">
                 <i class="material-icons text-primary">local_offer</i>
                 <span>Promotion</span>
               </a>
@@ -196,7 +196,7 @@
             <!-- /contract -->
             <!-- promotion -->
             <li>
-              <a href="{{ url('admin/table') }}">
+              <a href="{{ url('/admin/table') }}">
                 <i class="material-icons text-warning">payment</i>
                 <span>Payment Type</span>
               </a>
@@ -219,22 +219,22 @@
               </a>
               <ul class="sub-menu">
                 <li>
-                  <a href="{{ url('admin/table') }}">
+                  <a href="{{ url('/admin/table') }}">
                     <span>Service Type</span>
                   </a>
                 </li>
                 <li>
-                  <a href="{{ url('admin/table') }}">
+                  <a href="{{ url('/admin/table') }}">
                     <span>Service Type Variabel</span>
                   </a>
                 </li>
                 <li>
-                  <a href="{{ url('admin/table') }}">
+                  <a href="{{ url('/admin/table') }}">
                     <span>Service Variabel Group</span>
                   </a>
                 </li>
                 <li>
-                  <a href="{{ url('admin/table') }}">
+                  <a href="{{ url('/admin/table') }}">
                     <span>Service Variabel Group Val</span>
                   </a>
                 </li>
@@ -252,22 +252,22 @@
               </a>
               <ul class="sub-menu">
                 <li>
-                  <a href="{{ url('admin/table') }}">
+                  <a href="{{ url('/admin/table') }}">
                     <span>Supplier Type</span>
                   </a>
                 </li>
                 <li>
-                  <a href="{{ url('admin/table') }}">
+                  <a href="{{ url('/admin/table') }}">
                     <span>Supplier Type Variabel</span>
                   </a>
                 </li>
                 <li>
-                  <a href="{{ url('admin/table') }}">
+                  <a href="{{ url('/admin/table') }}">
                     <span>Supplier Variabel Group</span>
                   </a>
                 </li>
                 <li>
-                  <a href="{{ url('admin/table') }}">
+                  <a href="{{ url('/admin/table') }}">
                     <span>Supplier Variabel Group Val</span>
                   </a>
                 </li>
@@ -285,42 +285,42 @@
               </a>
               <ul class="sub-menu">
                 <li>
-                  <a href="{{ url('admin/table') }}">
+                  <a href="{{ url('/admin/table') }}">
                     <span>Pricing Type</span>
                   </a>
                 </li>
                 <li>
-                  <a href="{{ url('admin/table') }}">
+                  <a href="{{ url('/admin/table') }}">
                     <span>Pricing Type Variabel</span>
                   </a>
                 </li>
                 <li>
-                  <a href="{{ url('admin/table') }}">
+                  <a href="{{ url('/admin/table') }}">
                     <span>Pricing Variabel Group</span>
                   </a>
                 </li>
                 <li>
-                  <a href="{{ url('admin/table') }}">
+                  <a href="{{ url('/admin/table') }}">
                     <span>Pricing Variabel Group Val</span>
                   </a>
                 </li>
                 <li>
-                  <a href="{{ url('admin/table') }}">
+                  <a href="{{ url('/admin/table') }}">
                     <span>Global Variable</span>
                   </a>
                 </li>
                 <li>
-                  <a href="{{ url('admin/table') }}">
+                  <a href="{{ url('/admin/table') }}">
                     <span>Global Variable Val</span>
                   </a>
                 </li>
                 <li>
-                  <a href="{{ url('admin/table') }}">
+                  <a href="{{ url('/admin/table') }}">
                     <span>Global Variable Group</span>
                   </a>
                 </li>
                 <li>
-                  <a href="{{ url('admin/table') }}">
+                  <a href="{{ url('/admin/table') }}">
                     <span>Global Variable Group Val</span>
                   </a>
                 </li>
@@ -329,7 +329,7 @@
             <!-- /pricing -->
             <!-- promotion -->
             <li>
-              <a href="{{ url('admin/table') }}">
+              <a href="{{ url('/admin/table') }}">
                 <i class="material-icons text-primary">local_offer</i>
                 <span>Promotion</span>
               </a>
@@ -346,17 +346,17 @@
               </a>
               <ul class="sub-menu">
                 <li>
-                  <a href="{{ url('admin/table') }}">
+                  <a href="{{ url('/admin/table') }}">
                     <span>Service Type Material</span>
                   </a>
                 </li>
                 <li>
-                  <a href="{{ url('admin/table') }}">
+                  <a href="{{ url('/admin/table') }}">
                     <span>Service Material Group</span>
                   </a>
                 </li>
                 <li>
-                  <a href="{{ url('admin/table') }}">
+                  <a href="{{ url('/admin/table') }}">
                     <span>Service Material Group Val</span>
                   </a>
                 </li>
@@ -365,7 +365,7 @@
             <!-- /material -->
             <!-- category -->
             <li>
-              <a href="{{ url('admin/table') }}">
+              <a href="{{ url('/admin/table') }}">
                 <i class="material-icons text-warning">payment</i>
                 <span>Category Type</span>
               </a>
@@ -373,7 +373,7 @@
             <!-- /category -->
             <!-- booking -->
             <li>
-              <a href="{{ url('admin/table') }}">
+              <a href="{{ url('/admin/table') }}">
                 <i class="material-icons text-primary">book</i>
                 <span>Booking Type</span>
               </a>
@@ -388,7 +388,7 @@
             <!-- privilage -->
             <ul class="nav">
             <li id="li-user">
-              <a href="{{ url('admin/user#li-user') }}">
+              <a href="{{ url('/admin/user#li-user') }}">
                 <span class="menu-caret">
                   <i class="material-icons">arrow_drop_down</i>
                 </span>
@@ -397,25 +397,25 @@
               </a>
               <ul class="sub-menu">
                 <li>
-                  <a href="{{ url('admin/group#li-user') }}">
+                  <a href="{{ url('/admin/group#li-user') }}">
                     <span>Group</span>
                   </a>
                 </li>
                 <li>
-                  <a href="{{ url('admin/privilege#li-user') }}">
+                  <a href="{{ url('/admin/privilege#li-user') }}">
                     <span>Privilege</span>
                   </a>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="{{ url('admin/language') }}">
+              <a href="{{ url('/admin/language') }}">
                 <i class="material-icons text-primary">translate</i>
                 <span>Language</span>
               </a>
             </li>
             <li id="li-currency">
-              <a href="{{ url('admin/currency#li-currency') }}">
+              <a href="{{ url('/admin/currency#li-currency') }}">
                 <span class="menu-caret">
                   <i class="material-icons">arrow_drop_down</i>
                 </span>
@@ -424,7 +424,7 @@
               </a>
               <ul class="sub-menu">
                 <li>
-                  <a href="{{ url('admin/exchange#li-currency') }}">
+                  <a href="{{ url('/admin/exchange#li-currency') }}">
                     <span>Exchange Rate</span>
                   </a>
                 </li>
