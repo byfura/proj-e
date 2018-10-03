@@ -15,7 +15,7 @@
 		  <div class="col">
 		  	<div class="card">
 		  		<div class="card-header e-bg-secondary text-center">
-				    <h3>Info CC</h3>
+				    <h3>Info Kartu Kredit</h3>
 				  </div>
 		  		<div class="card-body container">
 				    <form class="form-signin" action="{{ url('u')}}">
