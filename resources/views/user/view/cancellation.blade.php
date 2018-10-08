@@ -1,11 +1,11 @@
 @extends('user.index-supplier')
 	
-@section('title', 'Payment')
+@section('title', 'Cancellation')
 
 @section('inputs')
 
-	<div class="form-group offset-2 col-9 mt-2">
-		<a class="btn btn-block btn-primary" href="{{url('s/cancellation/i')}}">Cancellation</a>
+	<div class="form-group mt-2">
+		<a class="btn btn-primary" href="{{url('s/cancellation/i')}}">Cancellation</a>
 	</div>
 
 	<?php

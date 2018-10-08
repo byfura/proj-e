@@ -50,15 +50,15 @@
 
 <main>
 
-<div class="container">
-	<div class="row">
+<div class="container-fluid">
+	<div class="row px-3">
 		<div class="col-md-2 order-md-2">
 			<div class="list-group">
 			  <!-- <a href="#" class="d-flex justify-content-between list-group-item list-group-item-action active">
 			    Status & Post
 			  </a>
 			  <a href="#" class="d-flex justify-content-between list-group-item list-group-item-action"><span class="fa fa-lg fa-archive"></span> Product</a>
-			  <a href="#" class="d-flex justify-content-between list-group-item list-group-item-action"><span class="fa fa-lg fa-ticket-alt"></span> Coupon</a> -->
+			-->
 			  <a data-toggle="collapse" data-target="#c-contract" href="#" class="d-flex justify-content-between list-group-item list-group-item-action"><span class="fa fa-lg fa-list"></span> Contract <span class="fa fa-sm fa-caret-down mt-2"></span></a>
 				<div id="c-contract" class="collapse">
 					<a href="{{ url('s/contract') }} " class="d-flex justify-content-between list-group-item list-group-item-action"> Contract</a>
@@ -66,8 +66,9 @@
 					<a href="{{ url('s/cancellation') }} " class="d-flex justify-content-between list-group-item list-group-item-action"> Cancellation</a>
 					<a href="{{ url('s/contractstatus/i') }} " class="d-flex justify-content-between list-group-item list-group-item-action"> Status</a>
 				</div>
+			  <a href="{{ url('s/coupon/i') }}" class="d-flex justify-content-between list-group-item list-group-item-action"><span class="fa fa-lg fa-ticket-alt"></span> Coupon</a> 
 				<a href="{{ url('s/userrating/i') }}" class="d-flex justify-content-between list-group-item list-group-item-action"><span class="fa fa-lg fa-star"></span> User Rating</a>
-			  <a data-toggle="collapse" data-target="#c-config" href="#" class="d-flex justify-content-between list-group-item list-group-item-action"><span class="fa fa-lg fa-cog"></span> Config <span class="fa fa-sm fa-caret-down mt-2"></span></a>
+			  <a data-toggle="collapse" data-target="#c-config" href="#" class="d-flex justify-content-between list-group-item list-group-item-action"><span class="fa fa-lg fa-cog"></span> Settings <span class="fa fa-sm fa-caret-down mt-2"></span></a>
 				<div id="c-config" class="collapse">
 					<a href="{{ url('s/productsupplier/i') }} " class="d-flex justify-content-between list-group-item list-group-item-action"> Supplier</a>
 					<a href="{{ url('s/productsuppliertype/i') }} " class="d-flex justify-content-between list-group-item list-group-item-action"> Supplier Type</a>

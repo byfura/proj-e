@@ -31,6 +31,14 @@ Route::get('s/{page}', function ($page) {
     return view('user/view/' . $page);
 });
 
+Route::get('u/{page}/i', function ($page) {
+    return view('user/input/' . $page);
+});
+
+Route::get('u/{page}', function ($page) {
+    return view('user/view/' . $page);
+});
+
 
 Route::get('login', function () {
     return view('user/login');

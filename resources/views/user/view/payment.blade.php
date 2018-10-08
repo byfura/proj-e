@@ -4,9 +4,9 @@
 
 @section('inputs')
 
-	<div class="form-group offset-2 col-9 mt-2">
-		<a class="btn btn-block btn-primary" href="{{url('s/invoice/i')}}">Invoice</a>
-		<a class="btn btn-block btn-primary" href="{{url('s/invoicepayment/i')}}">Invoice Payment</a>
+	<div class="form-group mt-2">
+		<a class="btn btn-primary" href="{{url('s/invoice/i')}}">Invoice</a>
+		<a class="btn btn-primary" href="{{url('s/invoicepayment/i')}}">Invoice Payment</a>
 	</div>
 
 	<?php
