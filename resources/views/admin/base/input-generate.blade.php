@@ -6,6 +6,13 @@
       <input class="form-control" type="text" placeholder="Input {{ucwords($input['name'])}} ..." id="{{preg_replace('/\s+/','',strtolower($input['name']))}}">
     </div>
   </div>
+  @elseif($input['type'] == 'text-readonly')
+  <div class="form-group row">
+    <label for="{{ preg_replace('/\s+/','',strtolower($input['name'])) }}" class="col-xs-2 col-form-label">{{ ucwords($input['name']) }}</label>
+    <div class="col-xs-10">
+      <input class="form-control" type="text" readonly value="{{ucwords($input['name'])}} Y" id="{{preg_replace('/\s+/','',strtolower($input['name']))}}">
+    </div>
+  </div>
   @elseif ($input['type'] == 'select')
   <div class="form-group row">
     <label for="{{ preg_replace('/\s+/','',strtolower($input['name'])) }}" class="col-xs-2 col-form-label">{{ ucwords($input['name']) }}</label>

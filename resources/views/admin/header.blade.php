@@ -388,16 +388,16 @@
             <!-- privilage -->
             <ul class="nav">
             <li id="li-user">
-              <a href="{{ url('/admin/user#li-user') }}">
+              <a href="#">
                 <span class="menu-caret">
                   <i class="material-icons">arrow_drop_down</i>
                 </span>
                 <i class="material-icons text-success">group</i>
-                <span>User</span>
+                <span>Group & Privilege</span>
               </a>
               <ul class="sub-menu">
                 <li>
-                  <a href="{{ url('/admin/group#li-user') }}">
+                  <a href="{{ url('/admin/grouppriv#li-user') }}">
                     <span>Group</span>
                   </a>
                 </li>
@@ -414,21 +414,11 @@
                 <span>Language</span>
               </a>
             </li>
-            <li id="li-currency">
-              <a href="{{ url('/admin/currency#li-currency') }}">
-                <span class="menu-caret">
-                  <i class="material-icons">arrow_drop_down</i>
-                </span>
-                <i class="material-icons text-warning">attach_money</i>
-                <span>Currency</span>
+            <li>
+              <a href="{{ url('/admin/currencyex') }}">
+                <i class="material-icons text-primary">attach_money</i>
+                <span>Currency & Exchange Rate</span>
               </a>
-              <ul class="sub-menu">
-                <li>
-                  <a href="{{ url('/admin/exchange#li-currency') }}">
-                    <span>Exchange Rate</span>
-                  </a>
-                </li>
-              </ul>
             </li>
           </ul>
             <!-- /currency & rxchange rate -->

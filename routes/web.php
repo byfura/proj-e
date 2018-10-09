@@ -48,6 +48,18 @@ Route::get('contact-us', function () {
     return view('user/contact-us');
 });
 
+Route::get('about-us', function () {
+    return view('user/about-us');
+});
+
+Route::get('support', function () {
+    return view('user/support');
+});
+
+Route::get('terms-conds', function () {
+    return view('user/terms-conds');
+});
+
 Route::get('register', function () {
     return view('user/register');
 });
@@ -62,6 +74,10 @@ Route::get('register3', function () {
 
 Route::get('forgot-password', function () {
     return view('user/forgot-password');
+});
+
+Route::get('forgot-password/confirm', function () {
+    return view('user/new-password');
 });
 
 Route::get('product', function () {

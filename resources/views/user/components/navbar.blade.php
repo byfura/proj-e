@@ -34,56 +34,28 @@
 	    	</div>
 	    </li>
 	    <li class="nav-item ml-1">
-	    	@if (!isset($user) && !isset($_GET['logged']))
-	    		@if (!isset($_GET['verified']))
-		      <div class="btn-group">
-					  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					    <i class="fa fa-user-times"></i> Guest <span class="badge badge-secondary">40</span>
-					  </button>
-					  <div class="dropdown-menu e-bg-primary">
-					  	<a class="dropdown-item" href="#" data-toggle="modal" data-target="#form-verify"><i class="mr-2 fa fa-check"></i> Verify</a>
-					  	<div class="dropdown-divider"></div>
-					    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#form-login"><i class="mr-2 fa fa-user-check"></i>Log In</a>
-					    <a class="dropdown-item" href="{{ url('register') }}"><i class="mr-2 fa fa-file-signature"></i>Register</a>
-					  </div>
-					</div>
-					@else
-					<div class="btn-group">
-					  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					    <i class="fa fa-user-times"></i> Guest <span class="badge badge-secondary">40</span>
-					  </button>
-					  <div class="dropdown-menu e-bg-primary">
-					    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#form-chat"><i class="mr-2 fa fa-comment"></i> Chat</a>
-					    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#form-call"><i class="mr-2 fa fa-phone"></i> Call</a>
-					    <div class="dropdown-divider"></div>
-					  	<a class="dropdown-item" href="#"><span class="mr-1 h5">40</span> Points</a>
-					  	<a class="dropdown-item" href="#" data-toggle="modal" data-target="#form-setting"><i class="mr-2 fa fa-cog"></i> Settings</a>
-					    <div class="dropdown-divider"></div>
-					    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#form-login"><i class="mr-2 fa fa-user-check"></i>Log In</a>
-					    <a class="dropdown-item" href="{{ url('register') }}"><i class="mr-2 fa fa-file-signature"></i>Register</a>
-					  </div>
-					</div>
-					@endif
-	      @else
-	      <div class="btn-group">
+	    	<div class="btn-group">
 				  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				    <i class="fa fa-user"></i> User <span class="badge badge-secondary">40</span>
 				  </button>
-				  <div class="dropdown-menu e-bg-primary">
-				  	<a class="dropdown-item" href="#" data-toggle="modal" data-target="#form-status"><i class="mr-2 fa fa-plus-square"></i> New Status</a>
+				  <div class="dropdown-menu e-bg-primary" style="left: -150; width: 300px;">
+				    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#form-setting"><i class="mr-2 fa fa-cog"></i> Edit User View</a>
+				  	<a class="dropdown-item" href="#" data-toggle="modal" data-target="#form-status"><i class="mr-2 fa fa-plus-square"></i> Status Update</a>
 				  	<div class="dropdown-divider"></div>
-				  	<a class="dropdown-item" href="#" data-toggle="modal" data-target="#form-friend"><i class="mr-2 fa fa-user-friends"></i> Friends</a>
-				  	<a class="dropdown-item" href="#" data-toggle="modal" data-target="#form-assoc"><i class="mr-2 fa fa-users"></i> Association</a>
 				    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#form-chat"><i class="mr-2 fa fa-comment"></i> Chat</a>
 				    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#form-call"><i class="mr-2 fa fa-phone"></i> Call</a>
 				    <div class="dropdown-divider"></div>
-				  	<a class="dropdown-item" href="#"><span class="mr-1 h5">40</span> Points</a>
-				    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#form-setting"><i class="mr-2 fa fa-cog"></i> Settings</a>
+				  	<a class="dropdown-item" href="#" data-toggle="modal" data-target="#form-friend"><i class="mr-2 fa fa-user-friends"></i> Friends & Assoc</a>
+				  	<a class="dropdown-item" href="#" data-toggle="modal" data-target="#form-assoc"><i class="mr-2 fa fa-users"></i> Add Friend</a>
+				  	<a class="dropdown-item" href="#" data-toggle="modal" data-target="#form-assoc"><i class="mr-2 fa fa-users"></i> Add Assoc</a>
+				  	<a class="dropdown-item" href="#" data-toggle="modal" data-target="#form-assoc"><i class="mr-2 fa fa-users"></i> Show Friend & Assoc</a>
+				  	<a class="dropdown-item" href="#" data-toggle="modal" data-target="#form-assoc"><i class="mr-2 fa fa-users"></i> Starred Friend</a>
+				  	<a class="dropdown-item" href="#" data-toggle="modal" data-target="#form-assoc"><i class="mr-2 fa fa-users"></i> Starred Assoc</a>
+				  	<!-- <a class="dropdown-item" href="#"><span class="mr-1 h5">40</span> Points</a>
 				    <div class="dropdown-divider"></div>
-				    <a class="dropdown-item" href="#"><i class="mr-2 fa fa-door-open"></i>Log Out</a>
+				    <a class="dropdown-item" href="#"><i class="mr-2 fa fa-door-open"></i>Log Out</a> -->
 				  </div>
 				</div>
-	      @endif
 	    </li>
 	  </ul>
   @component('user.components.cart')
@@ -103,71 +75,20 @@
 @endcomponent
 
 @component('user.components.custom-modal',['id'=>'form-chat', 'title'=>'Chat'])
-	<div class="form-group d-flex justify-content-between">
-		<input class="form-control form-control-sm mr-2" type="text" name="message" placeholder="Search Chat...">
-		<div class="d-flex justify-content-between align-items-center">
-			<input type="checkbox" name="starred" id="i-starred">
-			<label for="i-starred"><span class="fa fa-star fa-lg text-warning"></span></label>
-		</div>
-	</div>
-	<ul class="list-group mx-2">
-  	@for($i = 1; $i <= 3; $i++)
-    <li class="list-group-item p-1">
-    	<div class="d-flex justify-content-between">
-      	<div>
-      		<h6 class="my-0">User {{$i}}</h6>
-      		<small class="text-muted">Today, 23:11</small>
-      	</div>
-      	<span class="fa fa-star text-warning"></span>
-    	</div>
-      <span class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua...</span>
-    </li>
-    @endfor
-  </ul>
-	<div class="form-group d-flex mt-2">
-		<button class="btn btn-secondary btn-block">Create Group</button>
-	</div>
+	<button class="btn btn-info btn-block">View Starred Messages</button>
+	<button class="btn btn-info btn-block">Search Message</button>
+	<button class="btn btn-info btn-block">Create Group</button>
 @endcomponent
 
 @component('user.components.custom-modal',['id'=>'form-call', 'title'=>'Call'])
-	<div class="form-group d-flex justify-content-between">
-		<input class="form-control form-control-sm mr-2" type="text" name="message" placeholder="Search Call...">
-	</div>
-	<ul class="list-group mx-5">
-  	@for($i = 1; $i <= 6; $i++)
-    <li class="list-group-item p-1">
-    	<div class="d-flex justify-content-between">
-      	<div class="mr-1">
-      		<h6 class="my-0">User {{$i}}</h6>
-      		<small class="text-muted">Today, 23:11</small>
-      	</div>
-	      <span class="fa fa-phone"></span>
-    	</div>
-    </li>
-    @endfor
-  </ul>
-	<div class="form-group d-flex mt-2">
-		<button class="btn btn-secondary btn-block">Clear Call Log</button>
-	</div>
+	<button class="btn btn-info btn-block">Clear Call Log</button>
+	<button class="btn btn-info btn-block">Search Call Log</button>
 @endcomponent
 
-@component('user.components.custom-modal',['id'=>'form-status', 'title'=>'New Post'])
-	<div class="form-group">
-		<textarea class="form-control" rows="4" placeholder="Status..."></textarea>
-	</div>
-	<div class="form-group">
-		<div class="input-group mb-3">
-		  <div class="custom-file">
-		    <input type="file" class="custom-file-input" id="inputGroupFile01">
-		    <label class="custom-file-label" for="inputGroupFile01">Choose Attachment</label>
-		  </div>
-		</div>
-		<!-- <input type="file" name="attach" class="form-control" value="Attachment"> -->
-	</div>
-	<div class="form-group">
-		<button class="btn btn-secondary btn-block">Submit</button>
-	</div>
+@component('user.components.custom-modal',['id'=>'form-status', 'title'=>'Status'])
+	<button class="btn btn-info btn-block">Add Post</button>
+	<button class="btn btn-info btn-block">User Status Update</button>
+	<button class="btn btn-info btn-block">View Hidden Status Update</button>
 @endcomponent
 
 @component('user.components.custom-modal',['id'=>'form-friend', 'title'=>'Friend'])

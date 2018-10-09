@@ -8,21 +8,21 @@
 	  <div class="col">
 	  	<div class="card">
 	  		<div class="card-header e-bg-secondary text-center">
-			    <h3>Forgot Password</h3>
+			    <h3>New Password</h3>
 			  </div>
 	  		<div class="card-body container">
 			    <form class="form-signin">
-				    <!-- <div class="form-group">
-							<label for="i-username">Username</label>
-							<input type="text" class="form-control form-control-md" id="i-username" name="username" placeholder="Username">
-						</div> -->
 						<div class="form-group">
-							<label for="i-email">Email</label>
-							<input type="email" class="form-control form-control-md" id="i-email" name="email" placeholder="Email">
+							<label for="i-password">New Password</label>
+							<input type="password" class="form-control form-control-md" id="i-password" name="password" placeholder="Email">
+						</div>
+						<div class="form-group">
+							<label for="i-repassword">Confirm Password</label>
+							<input type="password" class="form-control form-control-md" id="i-repassword" name="repassword" placeholder="Email">
 						</div>
 						<div class="form-group pt-2">
 							<button type="button" class="btn btn-success btn-block btn-lg" data-toggle="modal" data-target="#modal-verifikasi">
-								<strong>@lang('Kirim Password')</strong>
+								<strong>@lang('Ganti Password')</strong>
 							</button>
 						</div>
 				  </form>
@@ -43,7 +43,7 @@
 	        </button>
 	      </div>
 	      <div class="modal-body">
-	        Kami sudah mengirimkan password baru ke email anda.
+	        Kami sudah mengirimkan password baru ke password anda.
 	      </div>
 	    </div>
 	  </div>
