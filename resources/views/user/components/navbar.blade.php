@@ -52,7 +52,7 @@
 				  	<a class="dropdown-item" href="#" data-toggle="modal" data-target="#form-assoc"><i class="mr-2 fa fa-users"></i> Starred Friend</a>
 				  	<a class="dropdown-item" href="#" data-toggle="modal" data-target="#form-assoc"><i class="mr-2 fa fa-users"></i> Starred Assoc</a>
 				  	<!-- <a class="dropdown-item" href="#"><span class="mr-1 h5">40</span> Points</a>
-				    <div class="dropdown-divider"></div>
+				    <div class="dropdown-divider"t></div>
 				    <a class="dropdown-item" href="#"><i class="mr-2 fa fa-door-open"></i>Log Out</a> -->
 				  </div>
 				</div>
@@ -155,15 +155,172 @@
     	</div>
     </li>
     <li class="list-group-item px-0">
-    	<a href="{{ url('user-edit') }}" class="my-0 align-items-center">
-    		<span class="fa fa-cog"></span> Edit User Information
+    	<a href="#" data-toggle="modal" data-target="#form-user-info" class="my-0 align-items-center">
+    		<span class="fa fa-cog"></span> User/Guest Information
     	</a>
     </li>
     <li class="list-group-item px-0">
     	<a href="{{ url('user-edit') }}" class="my-0 align-items-center">
-    		<span class="fa fa-cog"></span> Edit User Credit Card
+    		<span class="fa fa-cog"></span> Additional Information
+    	</a>
+    </li>
+    <li class="list-group-item px-0">
+    	<a href="{{ url('user-edit') }}" class="my-0 align-items-center">
+    		<span class="fa fa-cog"></span> Credit Card Info
+    	</a>
+    </li>
+    <li class="list-group-item px-0">
+    	<a href="{{ url('user-edit') }}" class="my-0 align-items-center">
+    		<span class="fa fa-cog"></span> User Group
+    	</a>
+    </li>
+    <li class="list-group-item px-0">
+    	<a href="{{ url('user-edit') }}" class="my-0 align-items-center">
+    		<span class="fa fa-cog"></span> Language
+    	</a>
+    </li>
+    <li class="list-group-item px-0">
+    	<a href="{{ url('user-edit') }}" class="my-0 align-items-center">
+    		<span class="fa fa-cog"></span> Currency
+    	</a>
+    </li>
+    <li class="list-group-item px-0">
+    	<a href="#" data-toggle="modal" data-target="#form-point" class="my-0">
+    		<span class="fa fa-cog"></span> Point
+    	</a>
+    </li>
+    <li class="list-group-item px-0">
+    	<a href="{{ url('user-edit') }}" class="my-0 align-items-center">
+    		<span class="fa fa-cog"></span> Rating
+    	</a>
+    </li>
+    <li class="list-group-item px-0">
+    	<a href="{{ url('user-edit') }}" class="my-0 align-items-center">
+    		<span class="fa fa-cog"></span> Privacy
+    	</a>
+    </li>
+    <li class="list-group-item px-0">
+    	<a href="{{ url('user-edit') }}" class="my-0 align-items-center">
+    		<span class="fa fa-cog"></span> Security
+    	</a>
+    </li>
+    <li class="list-group-item px-0">
+    	<a href="{{ url('user-edit') }}" class="my-0 align-items-center text-danger">
+    		<span class="fa fa-cog"></span> Delete User
     	</a>
     </li>
   </ul>
+@endcomponent
+
+@component('user.components.custom-modal',['id'=>'form-point', 'title'=>'Point', 'size'=>'modal-sm'])
+	<ul class="list-group list-group-flush px-0">
+    <li class="list-group-item px-0">
+    	<div class="d-flex justify-content-between">
+      	<h6 class="my-0 align-items-center"><i class="fa fa-star"></i> User Point</h6>
+      	<span>
+	    		25
+	    	</span>
+    	</div>
+    </li>
+    <li class="list-group-item px-0">
+    	<button onclick="window.location.href = '{{url('product-special')}}'" class="my-0 btn btn-info btn-block">
+    		Order Special Membership
+    	</button>
+    </li>
+  </ul>
+@endcomponent
+
+@component('user.components.custom-modal',['id'=>'form-user-info', 'title'=>'User Info', 'size'=>'modal-lg'])
+  <form class="form-signin" action="{{url('register3')}}">
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <div class="form-group">
+          <label for="i-firstname">First Name</label>
+          <input value="xxx" readonly type="text" class="form-control form-control-md" id="i-firstname" name="firstname" placeholder="First Name">
+        </div>
+      <hr/>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="form-group">
+          <label for="i-surname">Surname</label>
+          <input value="xxx" readonly type="text" class="form-control form-control-md" id="i-surname" name="surname" placeholder="Surname">
+        </div>
+      <hr/>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="form-group">
+          <label for="i-house">House</label>
+          <input value="xxx" readonly type="text" class="form-control form-control-md" id="i-house" name="house" placeholder="House">
+        </div>
+        <div class="form-group">
+          <label for="i-street">Street</label>
+          <input value="xxx" readonly type="text" class="form-control form-control-md" id="i-street" name="street" placeholder="Street">
+        </div>
+        <div class="form-group">
+          <label for="i-town">Town</label>
+          <input value="xxx" readonly type="text" class="form-control form-control-md" id="i-town" name="town" placeholder="Town">
+        </div>
+        <hr/>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="form-group">
+          <label for="i-region">Region</label>
+          <input value="xxx" readonly type="text" class="form-control form-control-md" id="i-region" name="region" placeholder="Region">
+        </div>
+        <div class="form-group">
+          <label for="i-country">Country</label>
+          <input value="xxx" readonly type="text" class="form-control form-control-md" id="i-country" name="country" placeholder="Country">
+        </div>
+        <div class="form-group">
+          <label for="i-postcode">Post Code</label>
+          <input value="xxx" readonly type="text" class="form-control form-control-md" id="i-postcode" name="postcode" placeholder="Post Code">
+        </div>
+        <hr/>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="form-group">
+          <label for="i-phone">Phone</label>
+          <input value="xxx" readonly type="text" class="form-control form-control-md" id="i-phone" name="phone" placeholder="Phone">
+        </div>
+        <div class="form-group">
+          <label for="i-mobile">Mobile</label>
+          <input value="xxx" readonly type="text" class="form-control form-control-md" id="i-mobile" name="mobile" placeholder="Mobile">
+        </div>
+        <div class="form-group">
+          <label for="i-fax">Fax</label>
+          <input value="xxx" readonly type="text" class="form-control form-control-md" id="i-fax" name="fax" placeholder="Fax">
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="form-group">
+          <label for="i-preference">Preference</label>
+          <input value="xxx" readonly type="text" class="form-control form-control-md" id="i-preference" name="preference" placeholder="Preference">
+        </div>
+        <div class="form-group">
+          <label for="i-carregno">Carregno</label>
+          <input value="xxx" readonly type="text" class="form-control form-control-md" id="i-carregno" name="carregno" placeholder="Carregno">
+        </div>
+        <div class="form-group">
+          <label for="i-alternativeemail">Alternative Email</label>
+          <input value="xxx" readonly type="text" class="form-control form-control-md" id="i-alternativeemail" name="alternativeemail" placeholder="Alternative Email">
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <hr/>
+        <div class="form-group">
+          <label for="i-vatnumber">Vat Number</label>
+          <input value="xxx" readonly type="text" class="form-control form-control-md" id="i-vatnumber" name="vatnumber" placeholder="Vat Number">
+        </div>
+        <div class="form-group">
+          <label for="i-vatnumbervalidated">Vat Number Validated</label>
+          <input value="xxx" readonly type="text" class="form-control form-control-md" id="i-vatnumbervalidated" name="vatnumbervalidated" placeholder="Vat Number Validated">
+        </div>
+        <div class="form-group">
+          <label for="i-vatnumbervalidatedresponse">Vat Number Validated Response</label>
+          <input value="xxx" readonly type="text" class="form-control form-control-md" id="i-vatnumbervalidatedresponse" name="vatnumbervalidatedresponse" placeholder="Vat Number Validated Response">
+        </div>
+      </div>
+    </div>
+  </form>
 @endcomponent
 

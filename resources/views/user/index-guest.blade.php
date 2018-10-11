@@ -80,8 +80,7 @@
 			<div class="col-lg-7 pt-2">
 				<button class="btn btn-lg btn-block btn-info">Tombol Search</button>
 				<button class="btn btn-lg btn-block btn-info">Tombol Listing</button>
-				<button class="btn btn-lg btn-block btn-info">Tombol Call</button>
-				<button class="btn btn-lg btn-block btn-info">Tombol Chat</button>
+				<button class="btn btn-lg btn-block btn-info">Informasi Fasilitas</button>
 			</div>
 			<div class="col-lg-5 e-col e-bg-secondary pt-3 pl-2 pr-2">
 				<h1 class="text-center">

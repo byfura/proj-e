@@ -72,6 +72,10 @@ Route::get('register3', function () {
     return view('user/register-cc');
 });
 
+Route::get('guest-info', function () {
+    return view('user/guest-info');
+});
+
 Route::get('forgot-password', function () {
     return view('user/forgot-password');
 });
@@ -82,6 +86,10 @@ Route::get('forgot-password/confirm', function () {
 
 Route::get('product', function () {
     return view('user/product');
+});
+
+Route::get('product-special', function () {
+    return view('user/product-special');
 });
 
 Route::get('product2', function () {
@@ -125,4 +133,3 @@ Route::get('admin/{page}/i', function ($page) {
 Route::get('admin/{page}', function ($page) {
     return view('admin/view/' . $page);
 });
-
