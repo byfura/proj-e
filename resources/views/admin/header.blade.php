@@ -43,7 +43,7 @@
           </div>
         </div>
         <!-- main navigation -->
-        <nav>
+        <nav style="overflow-y: hidden">
           <p class="nav-title">ADMIN MENUS</p>
           <ul class="nav">
             <li>
@@ -59,14 +59,19 @@
           <p class="nav-title">CONTRACT SECTION</p>
           <ul class="nav">
             <li id="li-contract">
-              <a href="{{ url('/admin/contractvar#li-contract') }}">
+              <a href="#">
                 <span class="menu-caret">
                   <i class="material-icons">arrow_drop_down</i>
                 </span>
                 <i class="material-icons text-primary">playlist_add_check</i>
-                <span>Contract Variable</span>
+                <span>Contract</span>
               </a>
               <ul class="sub-menu">
+                <li>
+                  <a href="{{ url('/admin/contractvar#li-contract') }}">
+                    <span>Contract Variable</span>
+                  </a>
+                </li>
                 <li>
                   <a href="{{ url('/admin/contractvargroup#li-contract') }}">
                     <span>Contract Variable Group</span>

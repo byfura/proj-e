@@ -1,6 +1,6 @@
 @extends('user.index-supplier')
 	
-@section('title', 'Coupon')
+@section('title', 'COntract')
 
 @section('inputs')
 
@@ -8,6 +8,7 @@
 		$inputs = [
 			['name' => 'Currency', 'type' => 'select'],
 			['name' => 'Booking', 'type' => 'select'],
+			['name' => 'Contract Var', 'type' => 'inputs'],
 			['name' => 'Discount', 'type' => 'int'],
 			['name' => 'Discount Detail', 'type' => 'text'],
 			['name' => 'Tax', 'type' => 'int'],

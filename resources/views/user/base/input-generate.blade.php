@@ -13,6 +13,46 @@
       <input class="form-control" type="date" id="{{preg_replace('/\s+/','',strtolower($input['name']))}}">
     </div>
   </div>
+  @elseif($input['type'] == 'inputs')
+  <div class="form-group col-12 row">
+    <div class="card ml-3 mr-5 p-2 w-100">
+      <div class="card-content">
+        {{ ucwords($input['name']) }} :
+        <div class="row">
+          <label class="col-2 col-form-label">Input Text</label>
+          <div class="col-10 col-form-label">
+            <input class="form-control" type="text">
+          </div>
+          <label class="col-2 col-form-label">Input Number</label>
+          <div class="col-10 col-form-label">
+            <input class="form-control" type="number">
+          </div>
+          <label class="col-2 col-form-label">Input Date</label>
+          <div class="col-10 col-form-label">
+            <input class="form-control" type="date">
+          </div>
+          <label class="col-2 col-form-label">Input Checkbox</label>
+          <div class="col-10 col-form-label row">
+            @for($i=1;$i<=rand(12,18);$i++)
+            <label class="col-2">
+              <input class="form-checkbox" type="checkbox">
+              <span>Check Box {{$i}}</span>
+            </label>
+            @endfor
+          </div>
+          <label class="col-2 col-form-label">Input Select</label>
+          <div class="col-10 col-form-label">
+            <select class="form-control">
+              <option selected>...</option>
+              <option>Select 1</option>
+              <option>Select 2</option>
+              <option>Select 3</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   @elseif ($input['type'] == 'select')
   <div class="form-group col-12 row">
     <label for="{{ preg_replace('/\s+/','',strtolower($input['name'])) }}" class="col-2 col-form-label">{{ ucwords($input['name']) }}</label>

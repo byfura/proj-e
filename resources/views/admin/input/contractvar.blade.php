@@ -1,6 +1,6 @@
 @extends('admin.base.input-template')
 	
-@section('title', 'Currency')
+@section('title', 'Contract Var')
 
 @section('inputs')
 
