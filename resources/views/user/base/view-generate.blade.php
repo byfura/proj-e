@@ -18,7 +18,8 @@
       @endif
       @endforeach
       <td>
-        <button class="btn btn-sm btn-info">Print</button>
+        <button class="btn btn-sm btn-success px-3 mr-2">Detail</button>
+        <button class="btn btn-sm btn-info px-3">Print</button>
       </td>
     </tr>
     @endfor

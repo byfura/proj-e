@@ -4,15 +4,15 @@
 
 @section('inputs')
 
-	<div class="form-group mt-2">
+	<!-- <div class="form-group mt-2">
 		<a class="btn btn-primary" href="{{url('s/invoice/i')}}">Invoice</a>
 		<a class="btn btn-primary" href="{{url('s/invoicepayment/i')}}">Invoice Payment</a>
-	</div>
+	</div> -->
 
 	<?php
 		$inputs = [
 			['name' => 'Invoice', 'type' => 'text'],
-			['name' => 'Payment', 'type' => 'number'],
+			['name' => 'Total Payment', 'type' => 'number'],
 		]
 	?>
 
