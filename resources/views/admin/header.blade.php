@@ -43,7 +43,7 @@
           </div>
         </div>
         <!-- main navigation -->
-        <nav style="overflow-y: hidden">
+        <nav>
           <p class="nav-title">ADMIN MENUS</p>
           <ul class="nav">
             <li>

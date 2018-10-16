@@ -1,6 +1,6 @@
 @extends('admin.base.view-template')
 	
-@section('title', 'Product Supplier Type Var')
+@section('title', 'Product Type Var')
 
 @section('inputs')
 
@@ -8,9 +8,10 @@
 		$inputs = [
 			['name' => 'Product Type', 'type' => 'select'],
 			['name' => 'Var Name', 'type' => 'text'],
-			['name' => 'Var Cat', 'type' => 'int'],
-			['name' => 'Var Type', 'type' => 'int'],
-			['name' => 'Key Variable', 'type' => 'int'],
+			['name' => 'Var Cat', 'type' => 'select'],
+			['name' => 'Var Type', 'type' => 'select'],
+			['name' => 'Key Variable', 'type' => 'select'],
+			// ['name' => 'Var Group Entity', 'type' => 'text'],
 			['name' => 'Icon', 'type' => 'file'],
 			['name' => 'Optional', 'type' => 'int'],
 		]

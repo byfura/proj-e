@@ -88,6 +88,14 @@ Route::get('product', function () {
     return view('user/product');
 });
 
+Route::get('product-supplier', function () {
+    return view('user/productsupplier');
+});
+
+Route::get('product-supplier2', function () {
+    return view('user/productsupplier2');
+});
+
 Route::get('product-special', function () {
     return view('user/product-special');
 });
